@@ -326,6 +326,17 @@
 									</div>				
 									<div class="card-body pt-0">
 										
+										
+										<div class="row">
+											<div class="col-12 mb-3">
+												<div class="form-check" style="padding-left:0;">
+													<label class="form-check-label" for="is_organization" style="cursor: pointer;">
+														<input type="checkbox" name="is_organization" id="is_organization" style="cursor:pointer;transform: scale(1.25, 1.25);" onchange="isOrganization($(this))">&nbsp;&nbsp;দলিল লেখক তালিকা থেকে সিলেক্ট করুন
+													</label>
+												</div>
+											</div>
+										</div>
+										
 										<div id="form_view">
 											<div class="row" id="author-edit" style="" data-select2-id="author-edit">
 												<div class="col-md-12" data-select2-id="8">
@@ -348,61 +359,61 @@
 																<option value="7" data-select2-id="18">লক্ষ্মীপুর</option>
 																<option value="8" data-select2-id="19">চট্টগ্রাম</option>
 																<option value="9" data-select2-id="20">কক্সবাজার</option>
-																<option value="10" data-select2-id="21">খাগড়াছড়ি</option>
-																<option value="11" data-select2-id="22">বান্দরবান</option>
-																<option value="12" data-select2-id="23">সিরাজগঞ্জ</option>
-																<option value="13" data-select2-id="24">পাবনা</option>
-																<option value="14" data-select2-id="25">বগুড়া</option>
-																<option value="15" data-select2-id="26">রাজশাহী</option>
-																<option value="16" data-select2-id="27">নাটোর</option>
-																<option value="17" data-select2-id="28">জয়পুরহাট</option>
-																<option value="18" data-select2-id="2">চাঁপাইনবাবগঞ্জ</option>
-																<option value="19" data-select2-id="29">নওগাঁ</option>
-																<option value="20" data-select2-id="30">যশোর</option>
-																<option value="21" data-select2-id="31">সাতক্ষীরা</option>
-																<option value="22" data-select2-id="32">মেহেরপুর</option>
-																<option value="23" data-select2-id="33">নড়াইল</option>
-																<option value="24" data-select2-id="34">চুয়াডাঙ্গা</option>
-																<option value="25" data-select2-id="35">কুষ্টিয়া</option>
-																<option value="26" data-select2-id="36">মাগুরা</option>
-																<option value="27" data-select2-id="37">খুলনা</option>
-																<option value="28" data-select2-id="38">বাগেরহাট</option>
-																<option value="29" data-select2-id="39">ঝিনাইদহ</option>
-																<option value="30" data-select2-id="40">ঝালকাঠি</option>
-																<option value="31" data-select2-id="41">পটুয়াখালী</option>
-																<option value="32" data-select2-id="42">পিরোজপুর</option>
-																<option value="33" data-select2-id="43">বরিশাল</option>
-																<option value="34" data-select2-id="44">ভোলা</option>
-																<option value="35" data-select2-id="45">বরগুনা</option>
-																<option value="36" data-select2-id="46">সিলেট</option>
-																<option value="37" data-select2-id="47">মৌলভীবাজার</option>
-																<option value="38" data-select2-id="48">হবিগঞ্জ</option>
-																<option value="39" data-select2-id="49">সুনামগঞ্জ</option>
-																<option value="40" data-select2-id="50">নরসিংদী</option>
-																<option value="41" data-select2-id="51">গাজীপুর</option>
-																<option value="42" data-select2-id="52">শরীয়তপুর</option>
-																<option value="43" data-select2-id="53">নারায়ণগঞ্জ</option>
-																<option value="44" data-select2-id="54">টাঙ্গাইল</option>
-																<option value="45" data-select2-id="55">কিশোরগঞ্জ</option>
-																<option value="46" data-select2-id="56">মানিকগঞ্জ</option>
-																<option value="47" data-select2-id="57">ঢাকা</option>
-																<option value="48" data-select2-id="58">মুন্সিগঞ্জ</option>
-																<option value="49" data-select2-id="59">রাজবাড়ী</option>
-																<option value="50" data-select2-id="60">মাদারীপুর</option>
-																<option value="51" data-select2-id="61">গোপালগঞ্জ</option>
-																<option value="52" data-select2-id="62">ফরিদপুর</option>
-																<option value="53" data-select2-id="63">পঞ্চগড়</option>
-																<option value="54" data-select2-id="64">দিনাজপুর</option>
-																<option value="55" data-select2-id="65">লালমনিরহাট</option>
-																<option value="56" data-select2-id="66">নীলফামারী</option>
-																<option value="57" data-select2-id="67">গাইবান্ধা</option>
-																<option value="58" data-select2-id="68">ঠাকুরগাঁও</option>
-																<option value="59" data-select2-id="69">রংপুর</option>
-																<option value="60" data-select2-id="70">কুড়িগ্রাম</option>
-																<option value="61" data-select2-id="71">শেরপুর</option>
-																<option value="62" data-select2-id="72">ময়মনসিংহ</option>
-																<option value="63" data-select2-id="73">জামালপুর</option>
-																<option value="64" data-select2-id="74">নেত্রকোণা</option>
+															<option value="10" data-select2-id="21">খাগড়াছড়ি</option>
+															<option value="11" data-select2-id="22">বান্দরবান</option>
+															<option value="12" data-select2-id="23">সিরাজগঞ্জ</option>
+															<option value="13" data-select2-id="24">পাবনা</option>
+															<option value="14" data-select2-id="25">বগুড়া</option>
+															<option value="15" data-select2-id="26">রাজশাহী</option>
+															<option value="16" data-select2-id="27">নাটোর</option>
+															<option value="17" data-select2-id="28">জয়পুরহাট</option>
+															<option value="18" data-select2-id="2">চাঁপাইনবাবগঞ্জ</option>
+															<option value="19" data-select2-id="29">নওগাঁ</option>
+															<option value="20" data-select2-id="30">যশোর</option>
+															<option value="21" data-select2-id="31">সাতক্ষীরা</option>
+															<option value="22" data-select2-id="32">মেহেরপুর</option>
+															<option value="23" data-select2-id="33">নড়াইল</option>
+															<option value="24" data-select2-id="34">চুয়াডাঙ্গা</option>
+															<option value="25" data-select2-id="35">কুষ্টিয়া</option>
+															<option value="26" data-select2-id="36">মাগুরা</option>
+															<option value="27" data-select2-id="37">খুলনা</option>
+															<option value="28" data-select2-id="38">বাগেরহাট</option>
+															<option value="29" data-select2-id="39">ঝিনাইদহ</option>
+															<option value="30" data-select2-id="40">ঝালকাঠি</option>
+															<option value="31" data-select2-id="41">পটুয়াখালী</option>
+															<option value="32" data-select2-id="42">পিরোজপুর</option>
+															<option value="33" data-select2-id="43">বরিশাল</option>
+															<option value="34" data-select2-id="44">ভোলা</option>
+															<option value="35" data-select2-id="45">বরগুনা</option>
+															<option value="36" data-select2-id="46">সিলেট</option>
+															<option value="37" data-select2-id="47">মৌলভীবাজার</option>
+															<option value="38" data-select2-id="48">হবিগঞ্জ</option>
+															<option value="39" data-select2-id="49">সুনামগঞ্জ</option>
+															<option value="40" data-select2-id="50">নরসিংদী</option>
+															<option value="41" data-select2-id="51">গাজীপুর</option>
+															<option value="42" data-select2-id="52">শরীয়তপুর</option>
+															<option value="43" data-select2-id="53">নারায়ণগঞ্জ</option>
+															<option value="44" data-select2-id="54">টাঙ্গাইল</option>
+															<option value="45" data-select2-id="55">কিশোরগঞ্জ</option>
+															<option value="46" data-select2-id="56">মানিকগঞ্জ</option>
+															<option value="47" data-select2-id="57">ঢাকা</option>
+															<option value="48" data-select2-id="58">মুন্সিগঞ্জ</option>
+															<option value="49" data-select2-id="59">রাজবাড়ী</option>
+															<option value="50" data-select2-id="60">মাদারীপুর</option>
+															<option value="51" data-select2-id="61">গোপালগঞ্জ</option>
+															<option value="52" data-select2-id="62">ফরিদপুর</option>
+															<option value="53" data-select2-id="63">পঞ্চগড়</option>
+															<option value="54" data-select2-id="64">দিনাজপুর</option>
+															<option value="55" data-select2-id="65">লালমনিরহাট</option>
+															<option value="56" data-select2-id="66">নীলফামারী</option>
+															<option value="57" data-select2-id="67">গাইবান্ধা</option>
+															<option value="58" data-select2-id="68">ঠাকুরগাঁও</option>
+															<option value="59" data-select2-id="69">রংপুর</option>
+															<option value="60" data-select2-id="70">কুড়িগ্রাম</option>
+															<option value="61" data-select2-id="71">শেরপুর</option>
+															<option value="62" data-select2-id="72">ময়মনসিংহ</option>
+															<option value="63" data-select2-id="73">জামালপুর</option>
+															<option value="64" data-select2-id="74">নেত্রকোণা</option>
 															</select>
 														</div>
 														<div class="col-md-3 mb-4">
@@ -411,7 +422,7 @@
 														</div>
 														
 														<div class="col-md-3 mb-4">
-															<label for="post_office"><strong>ডাকঘর :</strong><span class="text-danger">&nbsp;*</span></label>
+															<label for="post_office"><strong>ডাকঘর</strong><span class="text-danger">&nbsp;*</span></label>
 															<input type="text" name="post_office" id="post_office" class="form-control" value="">
 														</div>
 														
