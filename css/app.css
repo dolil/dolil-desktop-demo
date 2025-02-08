@@ -79,3 +79,7 @@
     --bs-btn-disabled-bg: #17a2b8;
     --bs-btn-disabled-border-color: #17a2b8;
 }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+}
