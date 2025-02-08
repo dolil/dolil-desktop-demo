@@ -276,31 +276,31 @@
 													<p style="font-size: 11px;">প্রতিনিধি</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
-													<a href="ownership.html" type="button" class="btn btn-default btn-circle">৫</a>
+													<a href="ownership.html" type="button" class="btn btn-success btn-circle">৫</a>
 													<p style="font-size: 11px;">মালিকানার তথ্য</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
-													<a href="schedule.html" type="button" class="btn btn-default btn-circle">৬</a>
+													<a href="schedule.html" type="button" class="btn btn-success btn-circle">৬</a>
 													<p style="font-size: 11px;">সম্পত্তির তফসিল</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
-													<a href="power-information.html" type="button" class="btn btn-default btn-circle">৭</a>
+													<a href="power-information.html" type="button" class="btn btn-success btn-circle">৭</a>
 													<p style="font-size: 11px;">পাওয়ার</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
-													<a href="property-boundaries.html" type="button" class="btn btn-default btn-circle">৮</a>
+													<a href="property-boundaries.html" type="button" class="btn btn-success btn-circle">৮</a>
 													<p style="font-size: 11px;">চৌহদ্দি</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
-													<a href="proportionate-ownership.html" type="button" class="btn btn-default btn-circle">৯</a>
+													<a href="proportionate-ownership.html" type="button" class="btn btn-success btn-circle">৯</a>
 													<p style="font-size: 11px;">হারাহারি বিবরণ</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
-													<a href="payments.html" type="button" class="btn btn-default btn-circle">১০</a>
+													<a href="payments.html" type="button" class="btn btn-success btn-circle">১০</a>
 													<p style="font-size: 11px;">প্রদত্ত অর্থ</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
-													<a href="witnesses.html" type="button" class="btn btn-default btn-circle">১১</a>
+													<a href="witnesses.html" type="button" class="btn btn-success btn-circle">১১</a>
 													<p style="font-size: 11px;">সাক্ষী ও সনাক্তকারী </p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
@@ -321,127 +321,39 @@
 								<div class="card">
 									<div class="card-header transparent-header">
 										<div class="d-flex justify-content-between">
-											<h3 style="margin-bottom: 0px !important">নাবালক দাতা/গ্রহীতার পক্ষে অভিভাবক</h3>
-											<div class="form-check ml-4">
-												<label class="form-check-label pt-1" for="is_organization" style="cursor: pointer;">
-													<input type="checkbox" name="is_organization" id="is_organization" style="cursor:pointer;transform: scale(1.25, 1.25);" onchange="isOrganization($(this))">&nbsp;&nbsp;প্রতিষ্ঠান কি না?
-												</label>
-											</div>
+											<h3 style="margin-bottom: 0px !important">সাক্ষীগণের নাম ও ঠিকানা</h3>
 										</div>
 									</div>				
-									<div class="card-body">
+									<div class="card-body pt-0">
 										
 										<div id="form_view">
-											<form action="https://dw.dolil.com/dolil/72659/buyers" method="POST" id="form">
-												<input type="hidden" name="_token" value="gDeZsx225QlxI1mV6HBat2I3WknZhs4NN45Ysot6">
+											<form action="https://dw.dolil.com/dolil/68725/witnesses" method="POST" id="witness-form">
+												<input type="hidden" name="_token" value="pvhwc9EM2AIi88CB0QG5LaVKK6LXKvy04jsLJRr2">
+												
+												<div class="col-12 mb-3">
+													<small id="name" class="form-text text-muted">
+														<i class="fas fa-info-circle"></i>&nbsp;জাতীয় পরিচয়পত্র  অনুযায়ী তথ্য প্রদান করুন
+													</small>
+												</div>
 												
 												<div class="form-group row">
 													<div class="col-md-3 mb-4">
-														<label for="name"><strong>নাম</strong><span class="text-danger">&nbsp;*</span></label>
-														<input type="text" name="name" id="name" class="form-control" value="" required="">
+														<label for="name">নাম<span class="text-danger">&nbsp;*</span></label>
+														<input type="text" name="name" id="name" class="form-control" value="">
 													<div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div> 
 													<div class="col-md-3 mb-4">
-														<label for="fathers_name"><strong>পিতার নাম</strong><span class="text-danger">&nbsp;*</span></label>
-														<input type="text" name="fathers_name" id="fathers_name" class="form-control" value="" required="">
+														<label for="father_spouse_name">পিতার/স্বামীর নাম<span class="text-danger">&nbsp;*</span></label>
+														<input type="text" name="father_spouse_name" id="father_spouse_name" class="form-control" value="">
 													</div> 
 													<div class="col-md-3 mb-4">
-														<label for="mothers_name"><strong>মাতার নাম</strong><span class="text-danger">&nbsp;*</span></label>
-														<input type="text" name="mothers_name" id="mothers_name" class="form-control" value="" required="">
-													</div>
-													<div class="col-md-3 mb-4">
-														<label for="spouse_name"><strong>স্বামীর নাম (প্রযোজ্য ক্ষেত্রে)</strong></label>
-														<input type="text" name="spouse_name" id="spouse_name" class="form-control" value="">
-													</div>
-													<div class="col-md-3 mb-4">
-														<label for="date_of_birth"><strong>জন্ম তারিখ</strong><span class="text-danger">&nbsp;*</span></label>
-														<input type="date" name="date_of_birth" id="date_of_birth" class="form-control" value="" required="">
-													</div> 
-													<div class="col-md-3 mb-4"> 
-														<label for="religion_id"><strong>ধর্ম</strong><span class="text-danger">&nbsp;*</span></label>
-														<select name="religion_id" id="religion_id" class="form-control select" required="">
-															<option value="">ধর্ম নির্বাচন করুন</option>
-															<option value="1">ইসলাম</option>
-															<option value="2">হিন্দু</option>
-															<option value="3">খ্রিস্টান</option>
-															<option value="4">বৌদ্ধ</option>
-															<option value="5">অন্যান্য</option>
-														</select>
-													</div>
-													<div class="col-md-3 mb-4">
-														<label for="occupation_id"><strong>পেশা</strong><span class="text-danger">&nbsp;*</span></label>
-														<select name="occupation_id" id="occupation_id" class="form-control select2bs4 select2-hidden-accessible" required="" data-select2-id="occupation_id" tabindex="-1" aria-hidden="true">
-															<option value="" data-select2-id="2">পেশা নির্বাচন করুন</option>
-															<option value="1">কৃষি</option>
-															<option value="2">গৃহিণী</option>
-															<option value="3">ব্যবসা</option>
-															<option value="4">চাকুরিজীবী</option>
-															<option value="5">আইনজীবী</option>
-															<option value="6">শিক্ষকতা</option>
-															<option value="7">চিত্রকর</option>
-															<option value="8">ব্যাংকার</option>
-															<option value="9">বিচারক</option>
-															<option value="10">ডাক্তার</option>
-															<option value="11">ড্রাইভার</option>
-															<option value="12">প্রকৌশলী</option>
-															<option value="13">জেলে</option>
-															<option value="14">সরকারী চাকুরিজীবী</option>
-															<option value="15">সাংবাদিক</option>
-															<option value="16">শ্রমিক</option>
-															<option value="17">সংসদ সদস্য</option>
-															<option value="18">স্থানীয় সরকার সদস্য</option>
-															<option value="19">মন্ত্রী</option>
-															<option value="20">সেবিকা</option>
-															<option value="21">বিমান - চালক</option>
-															<option value="22">রাজনীতিবিদ</option>
-															<option value="23">রাষ্ট্রপতি</option>
-															<option value="24">প্রধানমন্ত্রী</option>
-															<option value="25">বেসরকারী চাকুরিজীবী</option>
-															<option value="26">প্রকল্প কর্মচারী</option>
-															<option value="27">অবসরপ্রাপ্ত (সরকারি চাকুরিজীবী)</option>
-															<option value="28">অবসরপ্রাপ্ত (বেসরকারি চাকুরিজীবী)</option>
-															<option value="29">স্পীকার</option>
-															<option value="30">ছাত্র</option>
-															<option value="31">ঝাড়ুদার</option>
-															<option value="32">দরজি</option>
-															<option value="33">ধোপা</option>
-															<option value="34">ছাত্রী</option>
-															<option value="35">হিসাবরক্ষক</option>
-															<option value="36">স্থপতি</option>
-															<option value="37">পরিচ্ছন্নতা কর্মী</option>
-															<option value="38">ঠিকাদার</option>
-															<option value="39">বিচারপতি</option>
-															<option value="41">অন্যান্য</option>
-														</select>
-													</div>
-													<div class="col-md-3 mb-4">
-														<label for="nid_no"><strong>সনাক্তকরণ ডকুমেন্ট</strong><span class="text-danger">&nbsp;*</span></label>
-														<div class="input-group">
-															<select name="identity" id="identity" class="form-control" required="" onchange="checkIdentity($(this))">
-																<option value="">নির্বাচন করুন</option>
-																<option value="0">জাতীয় পরিচয়পত্র নম্বর</option>
-																<option value="1">জন্ম নিবন্ধন সনদ নম্বর</option>
-																<option value="2">পাসপোর্ট নম্বর</option>
-															</select>
-															<input type="text" name="nid_no" id="nid_no" class="form-control" onchange="filterMe($(this))" onkeyup="filterMe($(this))" value="" required="">
-														</div>
+														<label for="mother_name">মাতার নাম<span class="text-danger">&nbsp;*</span></label>
+														<input type="text" name="mother_name" id="mother_name" class="form-control" value="">
 													</div>
 													
 													<div class="col-md-3 mb-4">
-														<label for="tin_no"><strong>টি.আই.এন (প্রযোজ্য ক্ষেত্রে)</strong></label>
-														<input type="text" name="tin_no" id="tin_no" class="form-control" value="">
-													</div>
-												</div>
-												
-												<div class="col-md-12 bg-light mb-4">
-													<h4 class="p-2"><i class="fas fa-map-marker-alt"></i> স্থায়ী ঠিকানা</h4>
-												</div>
-												
-												<div class="form-group row">
-													<div class="col-md-3 mb-4">
-														<label for="district_id"><strong>জেলা</strong><span class="text-danger">&nbsp;*</span></label>
-														<select class="form-control select2bs4 select2-hidden-accessible" name="permanent_district_id" id="district_id" onchange="getPermanentThana()" required="" data-select2-id="district_id" tabindex="-1" aria-hidden="true">
-															<option value="-1" data-select2-id="4">জেলা নির্বাচন করুন</option>
-															
+														<label for="witness_district_id">জেলা<span class="text-danger">&nbsp;*</span></label>
+														<select class="form-control" name="district_id" id="witness_district_id" onchange="getWitnessesThana()">
+															<option value="">জেলা নির্বাচন করুন</option>
 															<option value="1">কুমিল্লা</option>
 															<option value="2">ফেনী</option>
 															<option value="3">ব্রাহ্মণবাড়িয়া</option>
@@ -453,8 +365,6 @@
 															<option value="9">কক্সবাজার</option>
 															<option value="10">খাগড়াছড়ি</option>
 															<option value="11">বান্দরবান</option>
-															
-															
 															<option value="12">সিরাজগঞ্জ</option>
 															<option value="13">পাবনা</option>
 															<option value="14">বগুড়া</option>
@@ -463,8 +373,6 @@
 															<option value="17">জয়পুরহাট</option>
 															<option value="18">চাঁপাইনবাবগঞ্জ</option>
 															<option value="19">নওগাঁ</option>
-															
-															
 															<option value="20">যশোর</option>
 															<option value="21">সাতক্ষীরা</option>
 															<option value="22">মেহেরপুর</option>
@@ -475,22 +383,16 @@
 															<option value="27">খুলনা</option>
 															<option value="28">বাগেরহাট</option>
 															<option value="29">ঝিনাইদহ</option>
-															
-															
 															<option value="30">ঝালকাঠি</option>
 															<option value="31">পটুয়াখালী</option>
 															<option value="32">পিরোজপুর</option>
 															<option value="33">বরিশাল</option>
 															<option value="34">ভোলা</option>
 															<option value="35">বরগুনা</option>
-															
-															
 															<option value="36">সিলেট</option>
 															<option value="37">মৌলভীবাজার</option>
 															<option value="38">হবিগঞ্জ</option>
 															<option value="39">সুনামগঞ্জ</option>
-															
-															
 															<option value="40">নরসিংদী</option>
 															<option value="41">গাজীপুর</option>
 															<option value="42">শরীয়তপুর</option>
@@ -504,8 +406,6 @@
 															<option value="50">মাদারীপুর</option>
 															<option value="51">গোপালগঞ্জ</option>
 															<option value="52">ফরিদপুর</option>
-															
-															
 															<option value="53">পঞ্চগড়</option>
 															<option value="54">দিনাজপুর</option>
 															<option value="55">লালমনিরহাট</option>
@@ -514,182 +414,181 @@
 															<option value="58">ঠাকুরগাঁও</option>
 															<option value="59">রংপুর</option>
 															<option value="60">কুড়িগ্রাম</option>
-															
-															
 															<option value="61">শেরপুর</option>
 															<option value="62">ময়মনসিংহ</option>
 															<option value="63">জামালপুর</option>
 															<option value="64">নেত্রকোণা</option>
-															
 														</select>
 													</div>
 													<div class="col-md-3 mb-4">
-														<label for="thana_id"><strong>থানা/উপজেলা</strong><span class="text-danger">&nbsp;*</span></label>
-														<select class="form-control select" name="permanent_thana_id" id="thana_id" required=""><option value="">থানা নির্বাচন করুন</option></select>
+														<label for="witness_thana_id">থানা/উপজেলা<span class="text-danger">&nbsp;*</span></label>
+														<select class="form-control" name="thana_id" id="witness_thana_id"></select>
 													</div>
 													
 													<div class="col-md-3 mb-4">
-														<label for="post_office"><strong>ডাকঘর</strong><span class="text-danger">&nbsp;*</span></label>
-														<input type="text" name="post_office" id="post_office" class="form-control" value="" required="">
+														<label for="post_office">ডাকঘর<span class="text-danger">&nbsp;*</span></label>
+														<input type="text" name="post_office" id="post_office" class="form-control" value="">
 													</div>
 													
 													<div class="col-md-3 mb-4">
-														<label for="permanent_address"><strong>গ্রাম/বাড়ি/হোল্ডিং/রোড/ব্লক/সেক্টর</strong><span class="text-danger">&nbsp;*</span></label>
-														<input type="text" name="permanent_address" id="permanent_address" class="form-control" value="" required="">
+														<label for="address">গ্রাম/বাড়ি/হোল্ডিং/রোড/ব্লক/সেক্টর<span class="text-danger">&nbsp;*</span></label>
+														<input type="text" name="address" id="address" class="form-control" value="">
+													</div>
+													<div class="col-md-3 mb-4">
+														<label for="date_of_birth">জন্ম তারিখ</label>
+														<input type="date" name="date_of_birth" id="date_of_birth" class="form-control" value="">
+													</div>
+													<div class="col-md-3 mb-4">
+														<label for="nid">জাতীয় পরিচয়পত্র নম্বর<span class="text-danger">&nbsp;*</span></label>
+														<input type="text" name="nid" id="nid" class="form-control" onchange="filterMe($(this))" onkeyup="filterMe($(this))" value="" pattern=".{10}|.{13}|.{17}" title="Either 10 OR 13 OR 17 Digit Nid Number">
 													</div> 
 												</div>
-												
-												<div class="col-md-12 bg-light mb-4">
-													<div class="row">
-														<div class="col-12 d-flex justify-content-between">
-															<h4 class="p-2 mb-0"><i class="fas fa-map-marker-alt"></i> বর্তমান ঠিকানা</h4>
-															<div class="form-check p-2 ml-4">
-																<label class="form-check-label pt-1" for="same_as_permanent" style="cursor: pointer;">
-																	<input class="form-check-input" type="checkbox" id="same_as_permanent" name="same_as_permanent" onclick="hideShow()" value="1" style="cursor: pointer;transform: scale(1.25, 1.25);margin-top: 2px">
-																	স্থায়ী ঠিকানার অনুরুপ
-																</label>
-															</div>
-														</div>
-													</div>
-												</div>						
-												<div class="form-group row" id="present_address_section">
-													<div class="col-md-3 mb-4">
-														<label for="district_id_"><strong>জেলা</strong><span class="text-danger">&nbsp;*</span></label>
-														<select class="form-control select2bs4 select2-hidden-accessible" name="present_district_id" id="district_id_" onchange="getPresentThana()" data-select2-id="district_id_" tabindex="-1" aria-hidden="true">
-															<option value="-1" data-select2-id="6">জেলা নির্বাচন করুন</option>
-															
-															<option value="1">কুমিল্লা</option>
-															<option value="2">ফেনী</option>
-															<option value="3">ব্রাহ্মণবাড়িয়া</option>
-															<option value="4">রাঙ্গামাটি</option>
-															<option value="5">নোয়াখালী</option>
-															<option value="6">চাঁদপুর</option>
-															<option value="7">লক্ষ্মীপুর</option>
-															<option value="8">চট্টগ্রাম</option>
-															<option value="9">কক্সবাজার</option>
-															<option value="10">খাগড়াছড়ি</option>
-															<option value="11">বান্দরবান</option>
-															
-															
-															<option value="12">সিরাজগঞ্জ</option>
-															<option value="13">পাবনা</option>
-															<option value="14">বগুড়া</option>
-															<option value="15">রাজশাহী</option>
-															<option value="16">নাটোর</option>
-															<option value="17">জয়পুরহাট</option>
-															<option value="18">চাঁপাইনবাবগঞ্জ</option>
-															<option value="19">নওগাঁ</option>
-															
-															
-															<option value="20">যশোর</option>
-															<option value="21">সাতক্ষীরা</option>
-															<option value="22">মেহেরপুর</option>
-															<option value="23">নড়াইল</option>
-															<option value="24">চুয়াডাঙ্গা</option>
-															<option value="25">কুষ্টিয়া</option>
-															<option value="26">মাগুরা</option>
-															<option value="27">খুলনা</option>
-															<option value="28">বাগেরহাট</option>
-															<option value="29">ঝিনাইদহ</option>
-															
-															
-															<option value="30">ঝালকাঠি</option>
-															<option value="31">পটুয়াখালী</option>
-															<option value="32">পিরোজপুর</option>
-															<option value="33">বরিশাল</option>
-															<option value="34">ভোলা</option>
-															<option value="35">বরগুনা</option>
-															
-															
-															<option value="36">সিলেট</option>
-															<option value="37">মৌলভীবাজার</option>
-															<option value="38">হবিগঞ্জ</option>
-															<option value="39">সুনামগঞ্জ</option>
-															
-															
-															<option value="40">নরসিংদী</option>
-															<option value="41">গাজীপুর</option>
-															<option value="42">শরীয়তপুর</option>
-															<option value="43">নারায়ণগঞ্জ</option>
-															<option value="44">টাঙ্গাইল</option>
-															<option value="45">কিশোরগঞ্জ</option>
-															<option value="46">মানিকগঞ্জ</option>
-															<option value="47">ঢাকা</option>
-															<option value="48">মুন্সিগঞ্জ</option>
-															<option value="49">রাজবাড়ী</option>
-															<option value="50">মাদারীপুর</option>
-															<option value="51">গোপালগঞ্জ</option>
-															<option value="52">ফরিদপুর</option>
-															
-															
-															<option value="53">পঞ্চগড়</option>
-															<option value="54">দিনাজপুর</option>
-															<option value="55">লালমনিরহাট</option>
-															<option value="56">নীলফামারী</option>
-															<option value="57">গাইবান্ধা</option>
-															<option value="58">ঠাকুরগাঁও</option>
-															<option value="59">রংপুর</option>
-															<option value="60">কুড়িগ্রাম</option>
-															
-															
-															<option value="61">শেরপুর</option>
-															<option value="62">ময়মনসিংহ</option>
-															<option value="63">জামালপুর</option>
-															<option value="64">নেত্রকোণা</option>
-															
-														</select>
-													</div>
-													<div class="col-md-3 mb-4">
-														<label for="thana_id_"><strong>থানা/উপজেলা</strong><span class="text-danger">&nbsp;*</span></label>
-														<select class="form-control select" name="present_thana_id" id="thana_id_"><option value="">থানা নির্বাচন করুন</option></select>
-													</div>
-													
-													<div class="col-md-3 mb-4">
-														<label for="post_office_"><strong>ডাকঘর</strong><span class="text-danger">&nbsp;*</span></label>
-														<input type="text" name="post_office_" id="post_office_" class="form-control" value="">
-													</div>
-													
-													<div class="col-md-3 mb-4">
-														<label for="present_address"><strong>গ্রাম/বাড়ি/হোল্ডিং/রোড/ব্লক/সেক্টর</strong><span class="text-danger">&nbsp;*</span></label>
-														<input type="text" name="present_address" class="form-control" value="">
-													</div> 
-												</div>
-												<div class="col-md-12 text-end mt-2">
-													<a href="attorney-view.html" class="btn btn-md btn-success"><i class="fa fa-save"></i> সংরক্ষণ করুন</a>
+												<div class="col-md-12 text-center">
+													<button class="btn btn-md btn-success"><i class="fa fa-save"></i>&nbsp;সংরক্ষণ করুন</button>
 												</div>
 											</form>
 										</div>
-										
+										<!--/.row-->									
 									</div>
 									<!--/.card-body-->
 								</div>
 								<!--/.card-->
-								
 								
 								<div class="card">
 									<div class="card-header transparent-header">
 										<div class="d-flex justify-content-between">
-											<h4 style="margin-bottom: 0px !important">নাবালকের পক্ষে আদালত কর্তৃক নিয়োজিত অভিভাবক এবং সেল পারমিশন এর বিবরণ</h4>
+											<h3 style="margin-bottom: 0px !important">সনাক্তকারীর নাম, ঠিকানা ও স্বাক্ষর</h3>
 										</div>
 									</div>				
-									<div class="card-body pt-0">										
-										<form action="https://dw.dolil.com/dolil/72659/ownership-separate-save" method="post">
-											<input type="hidden" name="_token" value="gDeZsx225QlxI1mV6HBat2I3WknZhs4NN45Ysot6"> 
-											<div class="row">
-												<div class="col-md-12 mb-4">
-													<textarea name="first_textbox" class="form-control" id="first_textbox" cols="30" rows="4"></textarea>
+									<div class="card-body pt-0">
+										
+										<div id="form_view">
+											<form action="https://dw.dolil.com/dolil/68725/identifiers" method="POST" id="identifier-form">
+												<input type="hidden" name="_token" value="pvhwc9EM2AIi88CB0QG5LaVKK6LXKvy04jsLJRr2">
+												
+												<div class="col-12 mb-3">
+													<small id="name" class="form-text text-muted">
+														<i class="fas fa-info-circle"></i>&nbsp;জাতীয় পরিচয়পত্র  অনুযায়ী তথ্য প্রদান করুন
+													</small>
 												</div>
-											</div>											
-											<div class="row">
-												<div class="col-12 text-end mb-3">
-													<a href="attorney-view.html" type="submit" class="btn btn-md btn-success"><i class="fa fa-save"></i>&nbsp; সংরক্ষণ করুন</a>
+												
+												<div class="form-group row">
+													<div class="col-md-3 mb-4">
+														<label for="name">নাম<span class="text-danger">&nbsp;*</span></label>
+														<input type="text" name="name" id="name" class="form-control" value="">	
+													<div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div> 
+													<div class="col-md-3 mb-4">
+														<label for="father_spouse_name">পিতার/স্বামীর নাম<span class="text-danger">&nbsp;*</span></label>
+														<input type="text" name="father_spouse_name" id="father_spouse_name" class="form-control" value="">	
+													</div>
+													<div class="col-md-3 mb-4">
+														<label for="mother_name">মাতার নাম<span class="text-danger">&nbsp;*</span></label>
+														<input type="text" name="mother_name" id="mother_name" class="form-control" value="">
+													</div>
+													<div class="col-md-3 mb-4">
+														<label for="witness_district_id">জেলা<span class="text-danger">&nbsp;*</span></label>
+														<select class="form-control" name="district_id" id="identifier_district_id" onchange="getIdentifiersThana()">
+															<option value="">জেলা নির্বাচন করুন</option>
+															<option value="1">কুমিল্লা</option>
+															<option value="2">ফেনী</option>
+															<option value="3">ব্রাহ্মণবাড়িয়া</option>
+															<option value="4">রাঙ্গামাটি</option>
+															<option value="5">নোয়াখালী</option>
+															<option value="6">চাঁদপুর</option>
+															<option value="7">লক্ষ্মীপুর</option>
+															<option value="8">চট্টগ্রাম</option>
+															<option value="9">কক্সবাজার</option>
+															<option value="10">খাগড়াছড়ি</option>
+															<option value="11">বান্দরবান</option>
+															<option value="12">সিরাজগঞ্জ</option>
+															<option value="13">পাবনা</option>
+															<option value="14">বগুড়া</option>
+															<option value="15">রাজশাহী</option>
+															<option value="16">নাটোর</option>
+															<option value="17">জয়পুরহাট</option>
+															<option value="18">চাঁপাইনবাবগঞ্জ</option>
+															<option value="19">নওগাঁ</option>
+															<option value="20">যশোর</option>
+															<option value="21">সাতক্ষীরা</option>
+															<option value="22">মেহেরপুর</option>
+															<option value="23">নড়াইল</option>
+															<option value="24">চুয়াডাঙ্গা</option>
+															<option value="25">কুষ্টিয়া</option>
+															<option value="26">মাগুরা</option>
+															<option value="27">খুলনা</option>
+															<option value="28">বাগেরহাট</option>
+															<option value="29">ঝিনাইদহ</option>
+															<option value="30">ঝালকাঠি</option>
+															<option value="31">পটুয়াখালী</option>
+															<option value="32">পিরোজপুর</option>
+															<option value="33">বরিশাল</option>
+															<option value="34">ভোলা</option>
+															<option value="35">বরগুনা</option>
+															<option value="36">সিলেট</option>
+															<option value="37">মৌলভীবাজার</option>
+															<option value="38">হবিগঞ্জ</option>
+															<option value="39">সুনামগঞ্জ</option>
+															<option value="40">নরসিংদী</option>
+															<option value="41">গাজীপুর</option>
+															<option value="42">শরীয়তপুর</option>
+															<option value="43">নারায়ণগঞ্জ</option>
+															<option value="44">টাঙ্গাইল</option>
+															<option value="45">কিশোরগঞ্জ</option>
+															<option value="46">মানিকগঞ্জ</option>
+															<option value="47">ঢাকা</option>
+															<option value="48">মুন্সিগঞ্জ</option>
+															<option value="49">রাজবাড়ী</option>
+															<option value="50">মাদারীপুর</option>
+															<option value="51">গোপালগঞ্জ</option>
+															<option value="52">ফরিদপুর</option>
+															<option value="53">পঞ্চগড়</option>
+															<option value="54">দিনাজপুর</option>
+															<option value="55">লালমনিরহাট</option>
+															<option value="56">নীলফামারী</option>
+															<option value="57">গাইবান্ধা</option>
+															<option value="58">ঠাকুরগাঁও</option>
+															<option value="59">রংপুর</option>
+															<option value="60">কুড়িগ্রাম</option>
+															<option value="61">শেরপুর</option>
+															<option value="62">ময়মনসিংহ</option>
+															<option value="63">জামালপুর</option>
+															<option value="64">নেত্রকোণা</option>
+														</select>
+													</div>
+													<div class="col-md-3 mb-4">
+														<label for="witness_thana_id">থানা/উপজেলা<span class="text-danger">&nbsp;*</span></label>
+														<select class="form-control select" name="thana_id" id="identifier_thana_id"></select>
+													</div>
+													<div class="col-md-3 mb-4">
+														<label for="post_office">ডাকঘর<span class="text-danger">&nbsp;*</span></label>
+														<input type="text" name="post_office" id="post_office" class="form-control" value="">
+													</div>
+													<div class="col-md-3 mb-4">
+														<label for="address">গ্রাম/বাড়ি/হোল্ডিং/রোড/ব্লক/সেক্টর<span class="text-danger">&nbsp;*</span></label>
+														<input type="text" name="address" id="address" class="form-control" value="">	
+													</div> 
+													<div class="col-md-3 mb-4">
+														<label for="date_of_birth">জন্ম তারিখ</label>
+														<input type="date" name="date_of_birth" id="date_of_birth" class="form-control" value="">
+													</div>
+													<div class="col-md-3 mb-4">
+														<label for="nid">জাতীয় পরিচয়পত্র নম্বর</label>
+														<input type="text" name="nid" id="nid" class="form-control" onchange="filterMe($(this))" onkeyup="filterMe($(this))" value="" pattern=".{10}|.{13}|.{17}" title="Either 10 OR 13 OR 17 Digit Nid Number">
+													</div> 
 												</div>
-											</div>
-										</form>										
+												<!--/.form-group row-->
+												<div class="col-md-12 text-center">
+													<button class="btn btn-md btn-success" type="submit"><i class="fa fa-save"></i>&nbsp;সংরক্ষণ করুন</button>
+												</div>
+												
+											</form>
+										</div>
+										<!--/.row-->									
 									</div>
 									<!--/.card-body-->
 								</div>
 								<!--/.card-->
+								
 								
 							</div>
 							<!--/.col-12-->

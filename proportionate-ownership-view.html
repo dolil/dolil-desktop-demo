@@ -264,23 +264,23 @@
 													<p style="font-size: 11px;">অফিসের তথ্য</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
-													<a href="buyers.html" type="button" class="btn btn-default btn-circle">২</a>
+													<a href="buyers.html" type="button" class="btn btn-success btn-circle">২</a>
 													<p style="font-size: 11px;">গ্রহীতা</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
-													<a href="sellers.html" type="button" class="btn btn-default btn-circle">৩</a>
+													<a href="sellers.html" type="button" class="btn btn-success btn-circle">৩</a>
 													<p style="font-size: 11px;">দাতা</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
-													<a href="attorney.html" type="button" class="btn btn-default btn-circle">৪</a>
+													<a href="attorney.html" type="button" class="btn btn-success btn-circle">৪</a>
 													<p style="font-size: 11px;">প্রতিনিধি</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
-													<a href="ownership.html" type="button" class="btn btn-default btn-circle">৫</a>
+													<a href="ownership.html" type="button" class="btn btn-success btn-circle">৫</a>
 													<p style="font-size: 11px;">মালিকানার তথ্য</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
-													<a href="schedule.html" type="button" class="btn btn-default btn-circle">৬</a>
+													<a href="schedule.html" type="button" class="btn btn-success btn-circle">৬</a>
 													<p style="font-size: 11px;">সম্পত্তির তফসিল</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
@@ -288,11 +288,11 @@
 													<p style="font-size: 11px;">পাওয়ার</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
-													<a href="property-boundaries.html" type="button" class="btn btn-default btn-circle">৮</a>
+													<a href="property-boundaries.html" type="button" class="btn btn-success btn-circle">৮</a>
 													<p style="font-size: 11px;">চৌহদ্দি</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
-													<a href="proportionate-ownership.html" type="button" class="btn btn-default btn-circle">৯</a>
+													<a href="proportionate-ownership.html" type="button" class="btn btn-success btn-circle">৯</a>
 													<p style="font-size: 11px;">হারাহারি বিবরণ</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
@@ -318,117 +318,130 @@
 									<!--/.card-body-->
 								</div>
 								
-								<div class="card mb-0">
-									<div class="card-header transparent-header pt-3">
-										<div class="d-flex justify-content-between">
-											<h3 style="margin-bottom: 0px !important">অফিসের তথ্যাদি</h3>
-										</div>
-										</div>				
-									<div class="card-body">
+								
+								<div class="row">
+									
+									<div class="col-md-12 text-end mb-3">
+										<a class="btn btn-md btn-info text-white" href="proportionate-ownership.html" style="cursor: pointer;"><i class="fa fa-edit"></i>&nbsp;এডিট করুন</a>
+									</div>
+									
+									<div class="col-6">
 										
-										<form action="https://dw.dolil.com/dolil/72659/office-information" method="POST" id="form">
-											<input type="hidden" name="_token" value="gDeZsx225QlxI1mV6HBat2I3WknZhs4NN45Ysot6">	
-																						
-											<div class="col-md-12 p-0" id="office-information-edit-form">
-												<div class="form-group row cs-office">
-													<div class="col-md-4 mb-4">
-														<div class="input-group">
-															<div class="input-group-prepend">
-																<span class="input-group-text">দলিলের প্রকৃতি<span class="text-danger">&nbsp;*</span></span>
-															</div>
-															<select name="dolil_type_id" id="dolil_type_id" class="form-control" required="">
-																<option value="">দলিল নির্বাচন করুন</option>
-																<option value="1">সাফ-কবলা</option>
-																<option value="2">হেবার ঘোষণাপত্র</option>
-																<option value="3">দানের ঘোষণাপত্র</option>
-																<option value="4">দানপত্র</option>
-																<option value="5">হেবাবিল এওয়াজ</option>
-																<option value="6">ওয়াক্‌ফ লিল্লাহ</option>
-																<option value="7">বায়নাপত্র</option>
-																<option value="8">বায়না রহিতকরণপত্র</option>
-																<option value="9">বন্ধক (ব্যাংক/আর্থিক প্রতিষ্ঠান)</option>
-																<option value="10">অছিয়তনামা</option>
-																<option value="11">উইল</option>
-																<option value="14">ভ্রম সংশোধন</option>
-																<option value="15">ঘোষণাপত্র</option>
-																<option value="16">চুক্তিপত্র</option>
-																<option value="17">অঙ্গীকারনামা</option>
-																<option value="19">নিরুপণপত্র</option>
-																<option value="20">অর্পননামা</option>
-																<option value="21">পুনঃসমর্পণ পত্র</option>
-																<option value="25">অংশীদারি</option>
-																<option value="26">অংশীদারি রহিতকরণপত্র</option>
-																<option value="27">বহালকরণ পত্র</option>
-																<option value="28">ট্রাস্টনামা</option>
-																<option value="29">অপ্রত্যাহারযোগ্য পাওয়ার অব অ্যাটর্নি (ব্যাংক বা আর্থিক প্রতিষ্ঠানের অনুকুলে)</option>
-																<option value="30">অপ্রত্যাহারযোগ্য পাওয়ার অব অ্যাটর্নি (পণমূল্য ব্যতীত)</option>
-																<option value="31">সাধারণ পাওয়ার অব অ্যাটর্নি</option>
-																<option value="32">অপ্রত্যাহারযোগ্য পাওয়ার অব অ্যাটর্নি (পণমূল্য সহ)</option>
-																<option value="33">বিশেষ পাওয়ার অব অ্যাটর্নি</option>
-																<option value="35">পাওয়ার অব অ্যাটর্নি (বাংলাদেশের বাহিরে সম্পাদিত)</option>
-															</select>
-														</div>
-													</div>
-													<div class="col-md-4 mb-4">
-														<div class="input-group">
-															<div class="input-group-prepend">
-																<span class="input-group-text">বিভাগ<span class="text-danger">&nbsp;*</span></span>
-															</div>
-															<select name="division_id" id="division_id" class="form-control" onchange="getDistrict()" required="">
-																<option value="">বিভাগ নির্বাচন করুন</option>
-																<option value="1">চট্টগ্রাম</option>
-																<option value="2">রাজশাহী</option>
-																<option value="3">খুলনা</option>
-																<option value="4">বরিশাল</option>
-																<option value="5">সিলেট</option>
-																<option value="6">ঢাকা</option>
-																<option value="7">রংপুর</option>
-																<option value="8">ময়মনসিংহ</option>
-															</select>
-														</div>
-													</div> 
-													<div class="col-md-4 mb-4">
-														<div class="input-group">
-															<div class="input-group-prepend">
-																<span class="input-group-text">জেলা<span class="text-danger">&nbsp;*</span></span>
-															</div>
-															<select class="form-control" id="district_id" name="district_id" onchange="getThana()" required=""><option value="">জেলা নির্বাচন করুন</option></select>
-														</div>
-													</div>
-													<div class="col-md-4 mb-4">
-														<div class="input-group">
-															<div class="input-group-prepend">
-																<span class="input-group-text">থানা/উপজেলা<span class="text-danger">&nbsp;*</span></span>
-															</div>
-															<select class="form-control" id="thana_id" name="thana_id" onchange="getOffice()" required=""><option value="">থানা নির্বাচন করুন</option></select>
-														</div>
-													</div>
-													<div class="col-md-8 mb-4">
-														<div class="input-group">
-															<div class="input-group-prepend">
-																<span class="input-group-text">অফিসের নাম<span class="text-danger">&nbsp;*</span></span>
-															</div>
-															<select class="form-control" id="office_id" name="office_id" required=""><option value="">সাব-রেজিস্ট্রি অফিস নির্বাচন করুন</option></select>
-														</div>
-													</div>
-												</div> 			
+										<div class="card mb-0">
+											<div class="card-header transparent-header pt-3">
+												<div class="d-flex justify-content-between">
+													<h4 style="margin-bottom: 0px !important">গ্রহীতা/ক্রেতার অর্জিত/ক্রয়কৃত জমির হারাহারি মালিকানার বিবরণ</h4>
+												</div>
 											</div>
 											
-										</form>		
-										
-										<!--  Start পাওয়ার অব অ্যাটর্নি (বাংলাদশের বাহিরে সম্পাদিত)-->
-										<!--  End পাওয়ার অব অ্যাটর্নি (বাংলাদশের বাহিরে সম্পাদিত)-->
-										
-										
-										<div class="row mt-4">
-											<div class="col-12 text-end">
-												<a href="buyers.html" class="btn btn-success" type="submit">পরবর্তী ধাপ&nbsp;<i class="fa fa-arrow-right"></i></a>
+											<div class="card-body pt-0">
+												
+												<div class="col-12" id="buyers-show">
+													<div class="table-responsive">
+														<table class="table table-bordered">
+															<thead>
+																<tr>
+																	<th style="min-width:140px;">নাম</th>
+																	<th style="min-width:100px;">পরিমাণ</th>
+																	<!--<th>একক</th>-->
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>কবির হোসেন</td>
+																	<td class="text-right">৫ একর</td>
+																	<!--<td>একর</td>-->
+																</tr>
+																<tr>
+																	<td>মোঃ মকছু মিয়া</td>
+																	<td class="text-right">১০ একর</td>
+																	<!--<td>একর</td>-->
+																</tr>
+																<tr>
+																	<td class="text-right">মোট:</td>
+																	<td class="text-right">১৫ একর</td>
+																	<!--<td>একর</td>-->
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+												
 											</div>
+											<!--/.card-body-->
 										</div>
-									<!--/.row-->									</div>
-									<!--/.card-body-->
+										<!--/.card-->
+									</div>
+									
+									<div class="col-6">
+										
+										<div class="card mb-0">
+											<div class="card-header transparent-header pt-3">
+												<div class="d-flex justify-content-between">
+													<h4 style="margin-bottom: 0px !important">দাতা/বিক্রেতার হস্তান্তরিত/প্রদেয় জমির হারাহারি মালিকানার বিবরণ</h4>
+												</div>
+											</div>
+											
+											<div class="card-body pt-0">
+												
+												<div class="col-12" id="sellers-show">
+													<div class="table-responsive">
+														<table class="table table-bordered">
+															<thead>
+																<tr>
+																	<th style="min-width:140px;">নাম</th>
+																	<th style="min-width:100px;">পরিমাণ</th>
+																	<!--<th>একক</th>-->
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>শিপন আহমেদ</td>
+																	<td class="text-right">১০ একর</td>
+																	<!--<td>একর</td>-->
+																</tr>
+																<tr>
+																	<td>আকম হোসেন</td>
+																	<td class="text-right">১৫ একর</td>
+																	<!--<td>একর</td>-->
+																</tr>
+																<tr>
+																	<td>আকম হোসেন</td>
+																	<td class="text-right">১৫ একর</td>
+																	<!--<td>একর</td>-->
+																</tr>
+																<tr>
+																	<td>আকম হোসেন</td>
+																	<td class="text-right">১৫ একর</td>
+																	<!--<td>একর</td>-->
+																</tr>
+																<tr>
+																	<td class="text-right">মোট:</td>
+																	<td class="text-right">২৫ একর</td>
+																	<!--<td>একর</td>-->
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													
+												</div>
+											</div>
+											<!--/.card-body-->
+										</div>
+										<!--/.card-->
+									</div>
+									
+									<div class="row mt-4">
+										<div class="col-6 text-left">
+											<a class="btn btn-primary" href="property-boundaries.html" style="background-color:#3498db; border-color:#3498db"><i class="fa fa-arrow-left"></i>&nbsp;পূর্ববর্তী ধাপ</a>
+										</div>
+										<div class="col-6 text-end">
+											<a href="payments.html" class="btn btn-success" type="submit">পরবর্তী ধাপ&nbsp;<i class="fa fa-arrow-right"></i></a>
+										</div>
+									</div>
+									
 								</div>
-								<!--/.card-->
+								
 								
 							</div>
 							<!--/.col-12-->
