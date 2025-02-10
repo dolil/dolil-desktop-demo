@@ -101,6 +101,7 @@
 					<a class="sidebar-toggle js-sidebar-toggle">
 						<i class="hamburger align-self-center"></i>
 					</a>
+					<h4 class="mb-0">অপ্রত্যাহারযোগ্য পাওয়ার অব অ্যাটর্নি (পণমূল্য ব্যতীত)</h4>
 					
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav navbar-align">
@@ -196,14 +197,8 @@
 							<div class="col-12">
 								
 								
-								<div class="card">
-									<div class="card-header transparent-header pt-3">
-										<div class="d-flex justify-content-between">
-											<h4 style="margin-bottom: 0px !important">অপ্রত্যাহারযোগ্য পাওয়ার অব অ্যাটর্নি (পণমূল্য ব্যতীত)</h4>
-											<a href="https://dw.dolil.com/report-an-issue" class="btn btn-sm btn-danger text-white"><i class="fa fa-flag"></i>&nbsp;Report Error</a>
-										</div>
-									</div>			
-									<div class="card-body pt-0 pb-2">
+								<div class="">
+									<div class="pt-0 pb-3">
 										
 										<style type="text/css" media="screen">
 											.steps-form {
@@ -268,12 +263,16 @@
 													<p style="font-size: 11px;">গ্রহীতা</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
+													<a href="buyers.html" type="button" class="btn btn-success btn-circle">২</a>
+													<p style="font-size: 11px;">গ্রহীতা</p>
+												</div>
+												<div class="steps-step" style="width: 8.33% !important">
 													<a href="sellers.html" type="button" class="btn btn-success btn-circle">৩</a>
 													<p style="font-size: 11px;">দাতা</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="attorney.html" type="button" class="btn btn-success btn-circle">৪</a>
-													<p style="font-size: 11px;">প্রতিনিধি</p>
+													<p style="font-size: 11px;">অ্যাটর্নি</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="ownership.html" type="button" class="btn btn-success btn-circle">৫</a>
@@ -297,7 +296,7 @@
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="payments.html" type="button" class="btn btn-default btn-circle">১০</a>
-													<p style="font-size: 11px;">প্রদত্ত অর্থ</p>
+													<p style="font-size: 11px;">সম্পত্তির মূল্য</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="witnesses.html" type="button" class="btn btn-default btn-circle">১১</a>
@@ -318,11 +317,9 @@
 									<!--/.card-body-->
 								</div>
 								
-								
-								<div class="row">
-									<div class="col-6">
-										
-										<div class="card mb-0">
+								<div class="card mb-0">
+									<div class="row">
+										<div class="col-6">
 											<div class="card-header transparent-header pt-3">
 												<div class="d-flex justify-content-between">
 													<h4 style="margin-bottom: 0px !important">গ্রহীতা/ক্রেতার অর্জিত/ক্রয়কৃত জমির হারাহারি মালিকানার বিবরণ</h4>
@@ -334,15 +331,15 @@
 												<form action="https://dw.dolil.com/dolil/68725/average-ownership" method="post" id="buyer-form">
 													<input type="hidden" name="_token" value="Iw9NRPgGXToleGkBiI712fo80B16wf6KOkzfXj1D">                                <input type="hidden" name="type" value="buyer">
 													<div class="table-responsive">
-														<table class="table table-bordered">
+														<table class="table table-bordered table-striped">
 															<thead>
 																<tr>
 																	<th style="min-width:150px;">নাম</th>
-																	<th class="d-flex justify-content-between" style="min-width:150px;">
-																		পরিমাণ 
+																	<th class="d-flex justify-content-between" style="min-width:50px;">
+																		<div>পরিমাণ <span class="text-danger">&nbsp;*</span></div>
 																		<div class="form-check ml-4">
 																			<label class="form-check-label" for="is_organization" style="cursor: pointer;">
-																				<input type="checkbox" name="is_organization" id="is_organization" style="cursor:pointer;transform: scale(1.25, 1.25);" onchange="isOrganization($(this))">&nbsp;&nbsp;সমহারে?
+																				<input type="checkbox" name="is_organization" id="is_organization" style="cursor:pointer;transform: scale(1.25, 1.25);" onchange="isOrganization($(this))">&nbsp;&nbsp;সমহারে অংশ বন্টন হবে কি না?
 																			</label>
 																		</div>
 																	</th>
@@ -353,7 +350,7 @@
 																	<td>কবির হোসেন</td>
 																	<td>
 																		<div class="input-group">
-																			<input type="text" name="buyer_amount_of_ownership[36387]" id="amount_of_ownership" class="form-control" onchange="filterSpotNoDot($(this))" onkeyup="filterSpotNoDot($(this))" value="০" required="">
+																			<input type="number" name="buyer_amount_of_ownership[36387]" id="amount_of_ownership" class="form-control" onchange="filterSpotNoDot($(this))" onkeyup="filterSpotNoDot($(this))" value="০" required="">
 																			<div class="input-group-append">
 																				<span class="input-group-text">একর</span>
 																			</div>
@@ -366,7 +363,7 @@
 																	<td>মোঃ মকছু মিয়া</td>
 																	<td>
 																		<div class="input-group">
-																			<input type="text" name="buyer_amount_of_ownership[36388]" id="amount_of_ownership" class="form-control" onchange="filterSpotNoDot($(this))" onkeyup="filterSpotNoDot($(this))" value="০" required="">
+																			<input type="number" name="buyer_amount_of_ownership[36388]" id="amount_of_ownership" class="form-control" onchange="filterSpotNoDot($(this))" onkeyup="filterSpotNoDot($(this))" value="০" required="">
 																			<div class="input-group-append">
 																				<span class="input-group-text">একর</span>
 																			</div>
@@ -389,14 +386,10 @@
 											</div>
 											<!--/.card-body-->
 											
-											
 										</div>
-										<!--/.card-->
-									</div>
-									
-									<div class="col-6">
+										<!--/.col-6-->
 										
-										<div class="card mb-0">
+										<div class="col-6">
 											<div class="card-header transparent-header pt-3">
 												<div class="d-flex justify-content-between">
 													<h4 style="margin-bottom: 0px !important">দাতা/বিক্রেতার হস্তান্তরিত/প্রদেয় জমির হারাহারি মালিকানার বিবরণ</h4>
@@ -407,15 +400,15 @@
 												<form action="https://dw.dolil.com/dolil/68725/average-ownership" method="post" id="seller-form">
 													<input type="hidden" name="_token" value="Iw9NRPgGXToleGkBiI712fo80B16wf6KOkzfXj1D">                                <input type="hidden" name="type" value="seller">
 													<div class="table-responsive">
-														<table class="table table-bordered">
+														<table class="table table-bordered table-striped">
 															<thead>
 																<tr>
 																	<th style="min-width:140px;">নাম</th>
-																	<th class="d-flex justify-content-between" style="min-width:150px;">
-																		পরিমাণ 
+																	<th class="d-flex justify-content-between" style="min-width:50px;">
+																		<div>পরিমাণ <span class="text-danger">&nbsp;*</span></div>
 																		<div class="form-check ml-4">
 																			<label class="form-check-label" for="is_organization" style="cursor: pointer;">
-																				<input type="checkbox" name="is_organization" id="is_organization" style="cursor:pointer;transform: scale(1.25, 1.25);" onchange="isOrganization($(this))">&nbsp;&nbsp;সমহারে?
+																				<input type="checkbox" name="is_organization" id="is_organization" style="cursor:pointer;transform: scale(1.25, 1.25);" onchange="isOrganization($(this))">&nbsp;&nbsp;সমহারে অংশ বন্টন হবে কি না?
 																			</label>
 																		</div>
 																	</th>
@@ -426,7 +419,7 @@
 																	<td>শিপন আহমেদ</td>
 																	<td>
 																		<div class="input-group">
-																			<input type="text" name="seller_amount_of_ownership[38518]" id="amount_of_ownership" class="form-control" onchange="filterSpotNoDot($(this))" onkeyup="filterSpotNoDot($(this))" value="0" required="">
+																			<input type="number" name="seller_amount_of_ownership[38518]" id="amount_of_ownership" class="form-control" onchange="filterSpotNoDot($(this))" onkeyup="filterSpotNoDot($(this))" value="0" required="">
 																			<div class="input-group-append">
 																				<span class="input-group-text">একর</span>
 																			</div>
@@ -439,7 +432,7 @@
 																	<td>আকম হোসেন</td>
 																	<td>
 																		<div class="input-group">
-																			<input type="text" name="seller_amount_of_ownership[38519]" id="amount_of_ownership" class="form-control" onchange="filterSpotNoDot($(this))" onkeyup="filterSpotNoDot($(this))" value="0" required="">
+																			<input type="number" name="seller_amount_of_ownership[38519]" id="amount_of_ownership" class="form-control" onchange="filterSpotNoDot($(this))" onkeyup="filterSpotNoDot($(this))" value="0" required="">
 																			<div class="input-group-append">
 																				<span class="input-group-text">একর</span>
 																			</div>
@@ -452,7 +445,7 @@
 																	<td>আকম হোসেন</td>
 																	<td>
 																		<div class="input-group">
-																			<input type="text" name="seller_amount_of_ownership[38519]" id="amount_of_ownership" class="form-control" onchange="filterSpotNoDot($(this))" onkeyup="filterSpotNoDot($(this))" value="0" required="">
+																			<input type="number" name="seller_amount_of_ownership[38519]" id="amount_of_ownership" class="form-control" onchange="filterSpotNoDot($(this))" onkeyup="filterSpotNoDot($(this))" value="0" required="">
 																			<div class="input-group-append">
 																				<span class="input-group-text">একর</span>
 																			</div>
@@ -476,18 +469,18 @@
 											<!--/.card-body-->
 											
 										</div>
-										<!--/.card-->
-										
-										
-										<div class="col-md-12 text-end mt-3">
-											<a href="proportionate-ownership-view.html" type="submit" class="btn btn-md btn-success text-white"><i class="fa fa-save"></i>&nbsp;সংরক্ষণ করুন</a>
-										</div>
-										
-										
+										<!--/.col-6-->
 										
 									</div>
+									<!--/.row-->
 									
-									
+								</div>
+								<!--/.card-->
+								
+								
+								
+								<div class="col-md-12 text-end mt-3">
+									<a href="proportionate-ownership-view.html" type="submit" class="btn btn-md btn-success text-white"><i class="fa fa-save"></i>&nbsp;সংরক্ষণ করুন</a>
 								</div>
 								
 								
@@ -576,184 +569,184 @@
 							intersect: true
 						},
 						plugins: {
-							filler: {
-								propagate: false
-							}
+						filler: {
+						propagate: false
+						}
 						},
 						scales: {
-							xAxes: [{
-								reverse: true,
-								gridLines: {
-									color: "rgba(0,0,0,0.0)"
-								}
-							}],
-							yAxes: [{
-								ticks: {
-									stepSize: 1000
-								},
-								display: true,
-								borderDash: [3, 3],
-								gridLines: {
-									color: "rgba(0,0,0,0.0)"
-								}
-							}]
+						xAxes: [{
+						reverse: true,
+						gridLines: {
+						color: "rgba(0,0,0,0.0)"
 						}
-					}
-				});
-			});
-		</script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				// Pie chart
-				new Chart(document.getElementById("chartjs-dashboard-pie"), {
-					type: "pie",
-					data: {
+						}],
+						yAxes: [{
+						ticks: {
+						stepSize: 1000
+						},
+						display: true,
+						borderDash: [3, 3],
+						gridLines: {
+						color: "rgba(0,0,0,0.0)"
+						}
+						}]
+						}
+						}
+						});
+						});
+						</script>
+						<script>
+						document.addEventListener("DOMContentLoaded", function() {
+						// Pie chart
+						new Chart(document.getElementById("chartjs-dashboard-pie"), {
+						type: "pie",
+						data: {
 						labels: ["Chrome", "Firefox", "IE"],
 						datasets: [{
-							data: [4306, 3801, 1689],
-							backgroundColor: [
-							window.theme.primary,
-							window.theme.warning,
-							window.theme.danger
-							],
-							borderWidth: 5
+						data: [4306, 3801, 1689],
+						backgroundColor: [
+						window.theme.primary,
+						window.theme.warning,
+						window.theme.danger
+						],
+						borderWidth: 5
 						}]
-					},
-					options: {
+						},
+						options: {
 						responsive: !window.MSInputMethodContext,
 						maintainAspectRatio: false,
 						legend: {
-							display: false
+						display: false
 						},
 						cutoutPercentage: 75
-					}
-				});
-			});
-		</script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				// Bar chart
-				new Chart(document.getElementById("chartjs-dashboard-bar"), {
-					type: "bar",
-					data: {
+						}
+						});
+						});
+						</script>
+						<script>
+						document.addEventListener("DOMContentLoaded", function() {
+						// Bar chart
+						new Chart(document.getElementById("chartjs-dashboard-bar"), {
+						type: "bar",
+						data: {
 						labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
 						datasets: [{
-							label: "This year",
-							backgroundColor: window.theme.primary,
-							borderColor: window.theme.primary,
-							hoverBackgroundColor: window.theme.primary,
-							hoverBorderColor: window.theme.primary,
-							data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
-							barPercentage: .75,
-							categoryPercentage: .5
+						label: "This year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						barPercentage: .75,
+						categoryPercentage: .5
 						}]
-					},
-					options: {
+						},
+						options: {
 						maintainAspectRatio: false,
 						legend: {
-							display: false
+						display: false
 						},
 						scales: {
-							yAxes: [{
-								gridLines: {
-									display: false
-								},
-								stacked: false,
-								ticks: {
-									stepSize: 20
-								}
-							}],
-							xAxes: [{
-								stacked: false,
-								gridLines: {
-									color: "transparent"
-								}
-							}]
+						yAxes: [{
+						gridLines: {
+						display: false
+						},
+						stacked: false,
+						ticks: {
+						stepSize: 20
 						}
-					}
-				});
-			});
-		</script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				var markers = [{
-					coords: [31.230391, 121.473701],
-					name: "Shanghai"
-				},
-				{
-					coords: [28.704060, 77.102493],
-					name: "Delhi"
-				},
-				{
-					coords: [6.524379, 3.379206],
-					name: "Lagos"
-				},
-				{
-					coords: [35.689487, 139.691711],
-					name: "Tokyo"
-				},
-				{
-					coords: [23.129110, 113.264381],
-					name: "Guangzhou"
-				},
-				{
-					coords: [40.7127837, -74.0059413],
-					name: "New York"
-				},
-				{
-					coords: [34.052235, -118.243683],
-					name: "Los Angeles"
-				},
-				{
-					coords: [41.878113, -87.629799],
-					name: "Chicago"
-				},
-				{
-					coords: [51.507351, -0.127758],
-					name: "London"
-				},
-				{
-					coords: [40.416775, -3.703790],
-					name: "Madrid "
-				}
-				];
-				var map = new jsVectorMap({
-					map: "world",
-					selector: "#world_map",
-					zoomButtons: true,
-					markers: markers,
-					markerStyle: {
+						}],
+						xAxes: [{
+						stacked: false,
+						gridLines: {
+						color: "transparent"
+						}
+						}]
+						}
+						}
+						});
+						});
+						</script>
+						<script>
+						document.addEventListener("DOMContentLoaded", function() {
+						var markers = [{
+						coords: [31.230391, 121.473701],
+						name: "Shanghai"
+						},
+						{
+						coords: [28.704060, 77.102493],
+						name: "Delhi"
+						},
+						{
+						coords: [6.524379, 3.379206],
+						name: "Lagos"
+						},
+						{
+						coords: [35.689487, 139.691711],
+						name: "Tokyo"
+						},
+						{
+						coords: [23.129110, 113.264381],
+						name: "Guangzhou"
+						},
+						{
+						coords: [40.7127837, -74.0059413],
+						name: "New York"
+						},
+						{
+						coords: [34.052235, -118.243683],
+						name: "Los Angeles"
+						},
+						{
+						coords: [41.878113, -87.629799],
+						name: "Chicago"
+						},
+						{
+						coords: [51.507351, -0.127758],
+						name: "London"
+						},
+						{
+						coords: [40.416775, -3.703790],
+						name: "Madrid "
+						}
+						];
+						var map = new jsVectorMap({
+						map: "world",
+						selector: "#world_map",
+						zoomButtons: true,
+						markers: markers,
+						markerStyle: {
 						initial: {
-							r: 9,
-							strokeWidth: 7,
-							stokeOpacity: .4,
-							fill: window.theme.primary
+						r: 9,
+						strokeWidth: 7,
+						stokeOpacity: .4,
+						fill: window.theme.primary
 						},
 						hover: {
-							fill: window.theme.primary,
-							stroke: window.theme.primary
+						fill: window.theme.primary,
+						stroke: window.theme.primary
 						}
-					},
-					zoomOnScroll: false
-				});
-				window.addEventListener("resize", () => {
-					map.updateSize();
-				});
-			});
-		</script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
-				var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
-				document.getElementById("datetimepicker-dashboard").flatpickr({
-					inline: true,
-					prevArrow: "<span title=\"Previous month\">&laquo;</span>",
-					nextArrow: "<span title=\"Next month\">&raquo;</span>",
-					defaultDate: defaultDate
-				});
-			});
-		</script>
-		
-	</body>
-	
-</html>	
+						},
+						zoomOnScroll: false
+						});
+						window.addEventListener("resize", () => {
+						map.updateSize();
+						});
+						});
+						</script>
+						<script>
+						document.addEventListener("DOMContentLoaded", function() {
+						var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+						var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+						document.getElementById("datetimepicker-dashboard").flatpickr({
+						inline: true,
+						prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+						nextArrow: "<span title=\"Next month\">&raquo;</span>",
+						defaultDate: defaultDate
+						});
+						});
+						</script>
+						
+						</body>
+						
+						</html>																

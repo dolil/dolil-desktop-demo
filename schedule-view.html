@@ -101,6 +101,7 @@
 					<a class="sidebar-toggle js-sidebar-toggle">
 						<i class="hamburger align-self-center"></i>
 					</a>
+					<h4 class="mb-0">অপ্রত্যাহারযোগ্য পাওয়ার অব অ্যাটর্নি (পণমূল্য ব্যতীত)</h4>
 					
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav navbar-align">
@@ -223,14 +224,8 @@
 							
 							
 							<div class="col-12">
-								<div class="card">
-									<div class="card-header transparent-header pt-3">
-										<div class="d-flex justify-content-between">
-											<h4 style="margin-bottom: 0px !important">অপ্রত্যাহারযোগ্য পাওয়ার অব অ্যাটর্নি (পণমূল্য ব্যতীত)</h4>
-											<a href="https://dw.dolil.com/report-an-issue" class="btn btn-sm btn-danger text-white"><i class="fa fa-flag"></i>&nbsp;Report Error</a>
-										</div>
-									</div>			
-									<div class="card-body pt-0 pb-2">
+								<div class="">
+									<div class="pt-0 pb-3">
 										
 										<style type="text/css" media="screen">
 											.steps-form {
@@ -295,12 +290,16 @@
 													<p style="font-size: 11px;">গ্রহীতা</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
+													<a href="buyers.html" type="button" class="btn btn-success btn-circle">২</a>
+													<p style="font-size: 11px;">গ্রহীতা</p>
+												</div>
+												<div class="steps-step" style="width: 8.33% !important">
 													<a href="sellers.html" type="button" class="btn btn-success btn-circle">৩</a>
 													<p style="font-size: 11px;">দাতা</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="attorney.html" type="button" class="btn btn-success btn-circle">৪</a>
-													<p style="font-size: 11px;">প্রতিনিধি</p>
+													<p style="font-size: 11px;">অ্যাটর্নি</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="ownership.html" type="button" class="btn btn-success btn-circle">৫</a>
@@ -324,7 +323,7 @@
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="payments.html" type="button" class="btn btn-default btn-circle">১০</a>
-													<p style="font-size: 11px;">প্রদত্ত অর্থ</p>
+													<p style="font-size: 11px;">সম্পত্তির মূল্য</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="witnesses.html" type="button" class="btn btn-default btn-circle">১১</a>
@@ -356,7 +355,8 @@
 									}
 								</style>
 								
-								<div class="card mb-3">
+								<div class="card">
+									
 									<div class="card-header">
 										<div class="row">
 											<div class="col-7 col-md-6">
@@ -365,981 +365,562 @@
 											<div class="col-5 col-md-6 text-end">
 												
 												
-												<a class="btn btn-sm btn-info text-white text-end" style="cursor: pointer;" href="schedule.html"><i class="fa fa-edit"></i>&nbsp;মৌজা এডিট করুন</a>
+												<a class="btn btn-sm btn-info text-white text-end" style="cursor: pointer;" href="schedule.html"><i class="fa fa-edit"></i>&nbsp;এডিট করুন</a>
 												
 												<a class="btn btn-sm btn-danger text-white" onclick="Delete(&#39;https://dw.dolil.com/dolil/30126/delete-schedule-of-properties&#39;)" style="cursor:pointer"><i class="fa fa-trash text-white"></i>&nbsp;ডিলিট  করুন</a>
 											</div>
 										</div>
 									</div>
-									<div class="card-body" style="">
-										
-										<div class="row">
-											<div class="col-md-12" id="schedule-view-30126">
-												<div class="table-responsive"><table class="table table-bordered">
-													<thead>
-														<tr>
-															<th>পৌরসভা/ইউনিয়ন</th>
-															<th>মৌজা</th>
-															<th>জমির একক</th>
-															<th class="d-none d-sm-table-cell">ভূমি অফিসের নাম</th>
-															<!--<th>অপশান</th>-->
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>১নং বিশারকান্দি</td>
-															<td>১ - বিশারকান্দি</td>
-															<td>শতাংশ</td>
-															<td class="d-none d-sm-table-cell">সহকারী কমিশনার (ভূমি), বানারীপাড়া।</td>
-														</tr>
-													</tbody>
-												</table></div>
-												
-											</div>
-											
-											<div class="col-md-12" id="schedule-edit-form-30126" style="display: none">
-												<form action="https://dw.dolil.com/dolil/30126/schedule-of-properties" method="post" accept-charset="utf-8" id="schedule-form-30126">
-													<input type="hidden" name="_token" value="pUKaXqrpQP3ISMh44LudXbfywoQTj1vpNiIqSZGh">							<div class="form-group row mb-0">
-														<div class="col-md-6 mb-4">
-															<div class="input-group">
-																<div class="input-group-prepend">
-																	<span class="input-group-text">পৌরসভা/ইউনিয়ন</span>
-																</div>
-																<select name="union" id="union-30126" class="form-control" required="">
-																	<option value="">পৌরসভা/ইউনিয়ন নির্বাচন করুন</option>
-																	<option>বানারীপাড়া পৌরসভা</option>
-																	<option selected="">১নং বিশারকান্দি</option>
-																	<option>২নং ইলুহার</option>
-																	<option>৩নং সৈয়দকাঠী</option>
-																	<option>৪নং চাখার</option>
-																	<option>৫নং সলিয়াবাকপুর</option>
-																	<option>৬নং বাইশারী</option>
-																	<option>৭নং বানারীপাড়া</option>
-																	<option>৮নং উদয়কাঠী</option>
-																</select>
-															</div>
-														</div>
-														<div class="col-md-6 mb-4">
-															<div class="input-group">
-																<div class="input-group-prepend">
-																	<span class="input-group-text">মৌজা</span>
-																</div>
-																<select name="mouja" id="mouja-30126" class="form-control mouzas select2bs4 select2-hidden-accessible" onchange="getJLNo(&#39;30126&#39;)" tabindex="-1" aria-hidden="true" data-select2-id="mouja-30126">
-																	<option value="">মৌজা নির্বাচন করুন</option>
-																	<option value="বিশারকান্দি" selected="" data-jl-no="১" data-select2-id="168">১ - বিশারকান্দি</option>
-																	<option value="মরিচবুনিয়া" data-jl-no="২">২ - মরিচবুনিয়া</option>
-																	<option value="কলাভিটা" data-jl-no="৩">৩ - কলাভিটা</option>
-																	<option value="মুড়ারবাড়ী" data-jl-no="৪">৪ - মুড়ারবাড়ী</option>
-																	<option value="কদমবাড়ী" data-jl-no="৫">৫ - কদমবাড়ী</option>
-																	<option value="উমারেরপাড়" data-jl-no="৬">৬ - উমারেরপাড়</option>
-																	<option value="তেতলা" data-jl-no="৭">৭ - তেতলা</option>
-																	<option value="উদয়কাঠী" data-jl-no="৮">৮ - উদয়কাঠী</option>
-																</select><span class="select2 select2-container select2-container--bootstrap4" dir="ltr" data-select2-id="167" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-mouja-30126-container"><span class="select2-selection__rendered" id="select2-mouja-30126-container" role="textbox" aria-readonly="true" title="১ - বিশারকান্দি">১ - বিশারকান্দি</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-																<input type="hidden" name="jl_no" id="jl_no-30126" class="form-control" value="১" placeholder="জে.এল.নং">
-															</div>
-														</div>
-														<div class="col-md-6 mb-4">
-															<div class="input-group">
-																<div class="input-group-prepend">
-																	<span class="input-group-text">জমির একক</span>
-																</div>
-																<select name="unit_of_land_id" id="unit_of_land_id" class="form-control" required="">
-																	<option value="">নির্বাচন করুন</option>
-																	<option value="1">একর</option>
-																	<option value="4" selected="">শতাংশ</option>
-																	<option value="6">বর্গমিটার</option>
-																	<option value="7">অযুতাংশ</option>
-																	<option value="8">বর্গফুট</option>
-																</select>
-															</div>
-														</div>
-														<div class="col-md-6">
-															<div class="input-group">
-																<div class="input-group-prepend">
-																	<span class="input-group-text">ভূমি অফিসের নাম</span>
-																</div>
-																<select name="land_office_name" id="land_office_name-30126" class="form-control" required="">
-																	<option value="">পৌরসভা/ইউনিয়ন নির্বাচন করুন</option>
-																	<option selected="">সহকারী কমিশনার (ভূমি), বানারীপাড়া।</option>
-																</select>
-															</div>
-														</div>
-													</div>
-													<div class="col-md-12 text-center mb-2">
-														<button class="btn btn-success" type="button" onclick="saveSchedule(&#39;30126&#39;)"><i class="fa fa-save"></i>&nbsp;সংরক্ষণ করুন</button>
-														<a class="btn btn-danger text-white" style="cursor: pointer;" onclick="$(&#39;#schedule-edit-form-30126&#39;).toggle(&#39;slow&#39;);$(&#39;#schedule-view-30126&#39;).toggle(&#39;slow&#39;);"><i class="fa fa-times"></i>&nbsp;বন্ধ করুন</a>
-													</div>
-												</form>
-											</div>
-											
-											<div class="col-md-12">
-												<div class="card schedule mt-3">
-													
-													<div class="card-header">
-														
-														
-														<div class="row">
-															<div class="col-md-6 mb-3 ">
-																<h5 class="mb-0"><strong>খতিয়ানের তথ্য</strong></h5>
-															</div>
-															<div class="col-md-6 mb-4 text-end ">
-																<div class="btn-group">
-																<a class="btn btn-sm btn-info text-white" href="schedule.html""><i class="fa fa-edit text-white"></i>&nbsp;খতিয়ান এডিট করুন</a>
-																<a class="btn btn-sm btn-danger text-white" onclick="Delete(&#39;https://dw.dolil.com/dolil/33472/delete-ledger&#39;)" style="cursor:pointer"><i class="fa fa-trash text-white"></i>&nbsp; ডিলিট করুন</a>
-															</div>
-														</div>
-													</div>
-													
-												</div>
-												
-												<!--/.card-header-->
-												<div class="card-body p-0" style="font-size:90%;">
-													
-													<div class="col-12 p-0 ">
-														<div class="table-responsive"><table class="table table-bordered table-striped text-center">
-															<thead>
-																<tr>
-																	<th colspan="4" class="border-left-0">খতিয়ান নং</th>
-																	
-																	<th colspan="5" class="border-left-0">দাগ নং</th>
-																	
-																	<th rowspan="2" class="d-none d-sm-table-cell">শ্রেনি </th>
-																	<th rowspan="2" class="d-none d-sm-table-cell">দাগে জমির পরিমাণ</th>
-																	<th rowspan="2"class="d-none d-sm-table-cell">দাগে প্রাপ্য জমি</th>
-																	<th rowspan="2"style="min-width:106px;">হস্তান্তরিত জমি</th>
-																	<th rowspan="2" class="text-center border-right-0">অপশন</th>
-																</tr>
-																<tr>
-																	<th class="border-left-0">সিএস</th>
-																	<th class="border-left-0">এসএ</th>
-																	<th class="border-left-0">আরএস</th>
-																	<th class="border-left-0">বিএস</th>
-																	<th class="border-left-0">নামজারি</th>
-																	
-																	<th class="border-left-0">সিএস</th>
-																	<th class="border-left-0">এসএ</th>
-																	<th class="border-left-0">আরএস</th>
-																	<th class="border-left-0">বিএস</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td class="border-left-0">৫০১</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	
-																	<td class="d-none d-sm-table-cell">বাড়ি</td>
-																	
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="text-end">৫৪৫ শতাংশ</td>
-																	
-																	<td class="text-center border-right-0">
-																		<div class="btn-group">
-																			<a class="btn btn-sm btn-info text-white" onclick="Show(&#39;দাগ এডিট করুন &#39;,&#39;https://dw.dolil.com/dolil/120729/edit-spot&#39;,&#39;max-width:960px&#39;)" style="cursor:pointer"><i class="fa fa-edit text-white"></i></a>
-																			<a class="btn btn-sm btn-danger text-white" onclick="Delete(&#39;https://dw.dolil.com/dolil/120729/delete-spot&#39;)" style="cursor:pointer"><i class="fa fa-trash text-white"></i></a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td class="border-left-0">৫০১</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	
-																	<td class="d-none d-sm-table-cell">বাড়ি</td>
-																	
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="text-end">৫৪৫ শতাংশ</td>
-																	
-																	<td class="text-center border-right-0">
-																		<div class="btn-group">
-																			<a class="btn btn-sm btn-info text-white" onclick="Show(&#39;দাগ এডিট করুন &#39;,&#39;https://dw.dolil.com/dolil/120729/edit-spot&#39;,&#39;max-width:960px&#39;)" style="cursor:pointer"><i class="fa fa-edit text-white"></i></a>
-																			<a class="btn btn-sm btn-danger text-white" onclick="Delete(&#39;https://dw.dolil.com/dolil/120729/delete-spot&#39;)" style="cursor:pointer"><i class="fa fa-trash text-white"></i></a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td class="border-left-0">৫০১</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	
-																	<td class="d-none d-sm-table-cell">বাড়ি</td>
-																	
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="text-end">৫৪৫ শতাংশ</td>
-																	
-																	<td class="text-center border-right-0">
-																		<div class="btn-group">
-																			<a class="btn btn-sm btn-info text-white" onclick="Show(&#39;দাগ এডিট করুন &#39;,&#39;https://dw.dolil.com/dolil/120729/edit-spot&#39;,&#39;max-width:960px&#39;)" style="cursor:pointer"><i class="fa fa-edit text-white"></i></a>
-																			<a class="btn btn-sm btn-danger text-white" onclick="Delete(&#39;https://dw.dolil.com/dolil/120729/delete-spot&#39;)" style="cursor:pointer"><i class="fa fa-trash text-white"></i></a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td colspan="10" class="text-end border-left-0">
-																		মোট
-																	</td>																		
-																	<td class="d-none d-sm-table-cell text-end">
-																		৫৫৫ শতাংশ
-																	</td>
-																	<td class="d-none d-sm-table-cell text-end">
-																		৫৫৫ শতাংশ
-																	</td>
-																	<td class="text-end">
-																		৫৫৫ শতাংশ
-																	</td>
-																	
-																	<td class="border-right-0"></td>
-																</tr>
-															</tbody>
-														</table>
-														</div>
-														<!--/.row-->
-													</div>
-												</div>
-												<!--/.card-body-->
-											</div>
-											<!--/.card-->
-										</div>
-										<!--/.col-md-12-->
-										
-										<!--<div class="col-12">
-											<p><small class="text-danger">*Government Land, **Restricted Land</small></p>
-										</div> -->
-										
-										<div class="col-md-12 mb-3 text-end">
-											<a class="btn btn-sm btn-success text-white" href="schedule.html" style="cursor:pointer"><i class="fa fa-plus"></i>&nbsp;একই মৌজায় নতুন খতিয়ান যোগ করুন</a>
-										</div>
-										
-									</div>
-								</div>
-							</div>
-							<!--/.card-->
-							
-							<div class="card mb-3">
-								<div class="card-header">
-									<div class="row">
-										<div class="col-7 col-md-6">
-											<h4 class="p-1 mb-0">সম্পত্তির তফসিল - ২</h4>
-										</div>
-										<div class="col-5 col-md-6 text-end">
-											
-											
-											<a class="btn btn-sm btn-info text-white text-end" style="cursor: pointer;" href="schedule-2.html"><i class="fa fa-edit"></i>&nbsp;মৌজা এডিট করুন</a>
-											
-											<a class="btn btn-sm btn-danger text-white" onclick="Delete(&#39;https://dw.dolil.com/dolil/30126/delete-schedule-of-properties&#39;)" style="cursor:pointer"><i class="fa fa-trash text-white"></i>&nbsp;ডিলিট  করুন</a>
+									<div class="card-body pt-0">
+										<div class="table-responsive"><table class="table table-bordered">
+											<thead>
+												<tr>
+													<th>পৌরসভা/ইউনিয়ন</th>
+													<th>মৌজা</th>
+													<th>জমির একক</th>
+													<th class="d-none d-sm-table-cell">ভূমি অফিসের নাম</th>
+													<!--<th>অপশান</th>-->
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>১নং বিশারকান্দি</td>
+													<td>১ - বিশারকান্দি</td>
+													<td>শতাংশ</td>
+													<td class="d-none d-sm-table-cell">সহকারী কমিশনার (ভূমি), বানারীপাড়া।</td>
+												</tr>
+											</tbody>
+										</table>
 										</div>
 									</div>
-								</div>
-								<div class="card-body" style="">
+									<!--./card--body-->
 									
-									<div class="row">
-										<div class="col-md-12" id="schedule-view-30126">
-											<div class="table-responsive"><table class="table table-bordered">
+									<div class="card-body pt-0" style="font-size:90%;">
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped text-center">
 												<thead>
 													<tr>
-														<th>পৌরসভা/ইউনিয়ন</th>
-														<th>মৌজা</th>
-														<th>জমির একক</th>
-														<th class="d-none d-sm-table-cell">ভূমি অফিসের নাম</th>
-														<!--<th>অপশান</th>-->
+														<th colspan="4" class="border-left-0">খতিয়ান নং</th>
+														
+														<th colspan="5" class="border-left-0">দাগ নং</th>
+														
+														<th rowspan="2" class="d-none d-sm-table-cell">শ্রেনি </th>
+														<th rowspan="2" class="d-none d-sm-table-cell">দাগে জমির পরিমাণ</th>
+														<th rowspan="2"class="d-none d-sm-table-cell">দাগে প্রাপ্য জমি</th>
+														<th rowspan="2"style="min-width:106px;">হস্তান্তরিত জমি</th>
+													</tr>
+													<tr>
+														<th class="border-left-0">সিএস</th>
+														<th class="border-left-0">এসএ</th>
+														<th class="border-left-0">আরএস</th>
+														<th class="border-left-0">বিএস</th>
+														<th class="border-left-0">নামজারি</th>
+														
+														<th class="border-left-0">সিএস</th>
+														<th class="border-left-0">এসএ</th>
+														<th class="border-left-0">আরএস</th>
+														<th class="border-left-0">বিএস</th>
 													</tr>
 												</thead>
 												<tbody>
 													<tr>
-														<td>১নং বিশারকান্দি</td>
-														<td>১ - বিশারকান্দি</td>
-														<td>শতাংশ</td>
-														<td class="d-none d-sm-table-cell">সহকারী কমিশনার (ভূমি), বানারীপাড়া।</td>
+														<td class="border-left-0">৫০১</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														
+														<td class="d-none d-sm-table-cell">বাড়ি</td>
+														
+														<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
+														<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
+														<td class="text-end">৫৪৫ শতাংশ</td>
+													</tr>
+													<tr>
+														<td class="border-left-0">৫০১</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														
+														<td class="d-none d-sm-table-cell">বাড়ি</td>
+														
+														<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
+														<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
+														<td class="text-end">৫৪৫ শতাংশ</td>
+													</tr>
+													<tr>
+														<td class="border-left-0">৫০১</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														
+														<td class="d-none d-sm-table-cell">বাড়ি</td>
+														
+														<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
+														<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
+														<td class="text-end">৫৪৫ শতাংশ</td>
+													</tr>
+													<tr>
+														<td colspan="10" class="text-end border-left-0">
+															মোট
+														</td>																		
+														<td class="d-none d-sm-table-cell text-end">
+															৫৫৫ শতাংশ
+														</td>
+														<td class="d-none d-sm-table-cell text-end">
+															৫৫৫ শতাংশ
+														</td>
+														<td class="text-end">
+															৫৫৫ শতাংশ
+														</td>
 													</tr>
 												</tbody>
-											</table></div>
-											
+											</table>
 										</div>
-										
-										<div class="col-md-12" id="schedule-edit-form-30126" style="display: none">
-											<form action="https://dw.dolil.com/dolil/30126/schedule-of-properties" method="post" accept-charset="utf-8" id="schedule-form-30126">
-												<input type="hidden" name="_token" value="pUKaXqrpQP3ISMh44LudXbfywoQTj1vpNiIqSZGh">							
-												<div class="form-group row mb-0">
-													<div class="col-md-6 mb-4">
-														<div class="input-group">
-															<div class="input-group-prepend">
-																<span class="input-group-text">পৌরসভা/ইউনিয়ন</span>
-															</div>
-															<select name="union" id="union-30126" class="form-control" required="">
-																<option value="">পৌরসভা/ইউনিয়ন নির্বাচন করুন</option>
-																<option>বানারীপাড়া পৌরসভা</option>
-																<option selected="">১নং বিশারকান্দি</option>
-																<option>২নং ইলুহার</option>
-																<option>৩নং সৈয়দকাঠী</option>
-																<option>৪নং চাখার</option>
-																<option>৫নং সলিয়াবাকপুর</option>
-																<option>৬নং বাইশারী</option>
-																<option>৭নং বানারীপাড়া</option>
-																<option>৮নং উদয়কাঠী</option>
-															</select>
-														</div>
-													</div>
-													<div class="col-md-6 mb-4">
-														<div class="input-group">
-															<div class="input-group-prepend">
-																<span class="input-group-text">মৌজা</span>
-															</div>
-															<select name="mouja" id="mouja-30126" class="form-control mouzas select2bs4 select2-hidden-accessible" onchange="getJLNo(&#39;30126&#39;)" tabindex="-1" aria-hidden="true" data-select2-id="mouja-30126">
-																<option value="">মৌজা নির্বাচন করুন</option>
-																<option value="বিশারকান্দি" selected="" data-jl-no="১" data-select2-id="168">১ - বিশারকান্দি</option>
-																<option value="মরিচবুনিয়া" data-jl-no="২">২ - মরিচবুনিয়া</option>
-																<option value="কলাভিটা" data-jl-no="৩">৩ - কলাভিটা</option>
-																<option value="মুড়ারবাড়ী" data-jl-no="৪">৪ - মুড়ারবাড়ী</option>
-																<option value="কদমবাড়ী" data-jl-no="৫">৫ - কদমবাড়ী</option>
-																<option value="উমারেরপাড়" data-jl-no="৬">৬ - উমারেরপাড়</option>
-																<option value="তেতলা" data-jl-no="৭">৭ - তেতলা</option>
-																<option value="উদয়কাঠী" data-jl-no="৮">৮ - উদয়কাঠী</option>
-															</select><span class="select2 select2-container select2-container--bootstrap4" dir="ltr" data-select2-id="167" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-mouja-30126-container"><span class="select2-selection__rendered" id="select2-mouja-30126-container" role="textbox" aria-readonly="true" title="১ - বিশারকান্দি">১ - বিশারকান্দি</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-															<input type="hidden" name="jl_no" id="jl_no-30126" class="form-control" value="১" placeholder="জে.এল.নং">
-														</div>
-													</div>
-													<div class="col-md-6 mb-4">
-														<div class="input-group">
-															<div class="input-group-prepend">
-																<span class="input-group-text">জমির একক</span>
-															</div>
-															<select name="unit_of_land_id" id="unit_of_land_id" class="form-control" required="">
-																<option value="">নির্বাচন করুন</option>
-																<option value="1">একর</option>
-																<option value="4" selected="">শতাংশ</option>
-																<option value="6">বর্গমিটার</option>
-																<option value="7">অযুতাংশ</option>
-																<option value="8">বর্গফুট</option>
-															</select>
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="input-group">
-															<div class="input-group-prepend">
-																<span class="input-group-text">ভূমি অফিসের নাম</span>
-															</div>
-															<select name="land_office_name" id="land_office_name-30126" class="form-control" required="">
-																<option value="">পৌরসভা/ইউনিয়ন নির্বাচন করুন</option>
-																<option selected="">সহকারী কমিশনার (ভূমি), বানারীপাড়া।</option>
-															</select>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-12 text-center mb-2">
-													<button class="btn btn-success" type="button" onclick="saveSchedule(&#39;30126&#39;)"><i class="fa fa-save"></i>&nbsp;সংরক্ষণ করুন</button>
-												</div>
-											</form>
-										</div>
-										
-										<div class="col-md-12">
-											<div class="card schedule mt-3">
-												
-												<div class="card-header">
-													<div class="row">
-														<div class="col-md-6 mb-3 ">
-															<h5 class="mb-0"><strong>খতিয়ানের তথ্য</strong></h5>
-														</div>
-														<div class="col-md-6 mb-4 text-end ">
-															<div class="btn-group">
-																<a class="btn btn-sm btn-info text-white" href="schedule-2.html" style="cursor:pointer"><i class="fa fa-edit text-white"></i>&nbsp;খতিয়ান এডিট করুন</a>
-																<a class="btn btn-sm btn-danger text-white" onclick="Delete(&#39;https://dw.dolil.com/dolil/33472/delete-ledger&#39;)" style="cursor:pointer"><i class="fa fa-trash text-white"></i>&nbsp; ডিলিট করুন</a>
-															</div>
-														</div>
-													</div>
-													
-												</div>
-												
-												<!--/.card-header-->
-												<div class="card-body p-0" style="font-size:90%;">
-													
-													<div class="col-12 p-0 ">
-														<div class="table-responsive"><table class="table table-bordered table-striped text-center">
-															<thead>
-																<tr>
-																	<th colspan="4" class="border-left-0">খতিয়ান নং</th>
-																	
-																	<th colspan="5" class="border-left-0">দাগ নং</th>
-																	
-																	<th rowspan="2" class="d-none d-sm-table-cell">শ্রেনি </th>
-																	<th rowspan="2" class="d-none d-sm-table-cell">দাগে জমির পরিমাণ</th>
-																	<th rowspan="2"class="d-none d-sm-table-cell">দাগে প্রাপ্য জমি</th>
-																	<th rowspan="2"style="min-width:106px;">হস্তান্তরিত জমি</th>
-																	<th rowspan="2" class="text-center border-right-0">অপশন</th>
-																</tr>
-																<tr>
-																	<th class="border-left-0">সিএস</th>
-																	<th class="border-left-0">এসএ</th>
-																	<th class="border-left-0">আরএস</th>
-																	<th class="border-left-0">বিএস</th>
-																	<th class="border-left-0">নামজারি</th>
-																	
-																	<th class="border-left-0">সিএস</th>
-																	<th class="border-left-0">এসএ</th>
-																	<th class="border-left-0">আরএস</th>
-																	<th class="border-left-0">বিএস</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td class="border-left-0">৫০১</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	
-																	<td class="d-none d-sm-table-cell">বাড়ি</td>
-																	
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="text-end">৫৪৫ শতাংশ</td>
-																	
-																	<td class="text-center border-right-0">
-																		<div class="btn-group">
-																			<a class="btn btn-sm btn-info text-white" onclick="Show(&#39;দাগ এডিট করুন &#39;,&#39;https://dw.dolil.com/dolil/120729/edit-spot&#39;,&#39;max-width:960px&#39;)" style="cursor:pointer"><i class="fa fa-edit text-white"></i></a>
-																			<a class="btn btn-sm btn-danger text-white" onclick="Delete(&#39;https://dw.dolil.com/dolil/120729/delete-spot&#39;)" style="cursor:pointer"><i class="fa fa-trash text-white"></i></a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td class="border-left-0">৫০১</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	
-																	<td class="d-none d-sm-table-cell">বাড়ি</td>
-																	
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="text-end">৫৪৫ শতাংশ</td>
-																	
-																	<td class="text-center border-right-0">
-																		<div class="btn-group">
-																			<a class="btn btn-sm btn-info text-white" onclick="Show(&#39;দাগ এডিট করুন &#39;,&#39;https://dw.dolil.com/dolil/120729/edit-spot&#39;,&#39;max-width:960px&#39;)" style="cursor:pointer"><i class="fa fa-edit text-white"></i></a>
-																			<a class="btn btn-sm btn-danger text-white" onclick="Delete(&#39;https://dw.dolil.com/dolil/120729/delete-spot&#39;)" style="cursor:pointer"><i class="fa fa-trash text-white"></i></a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td class="border-left-0">৫০১</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	
-																	<td class="d-none d-sm-table-cell">বাড়ি</td>
-																	
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="text-end">৫৪৫ শতাংশ</td>
-																	
-																	<td class="text-center border-right-0">
-																		<div class="btn-group">
-																			<a class="btn btn-sm btn-info text-white" onclick="Show(&#39;দাগ এডিট করুন &#39;,&#39;https://dw.dolil.com/dolil/120729/edit-spot&#39;,&#39;max-width:960px&#39;)" style="cursor:pointer"><i class="fa fa-edit text-white"></i></a>
-																			<a class="btn btn-sm btn-danger text-white" onclick="Delete(&#39;https://dw.dolil.com/dolil/120729/delete-spot&#39;)" style="cursor:pointer"><i class="fa fa-trash text-white"></i></a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td colspan="10" class="text-end border-left-0">
-																		মোট
-																	</td>																		
-																	<td class="d-none d-sm-table-cell text-end">
-																		৫৫৫ শতাংশ
-																	</td>
-																	<td class="d-none d-sm-table-cell text-end">
-																		৫৫৫ শতাংশ
-																	</td>
-																	<td class="text-end">
-																		৫৫৫ শতাংশ
-																	</td>
-																	
-																	<td class="border-right-0"></td>
-																</tr>
-															</tbody>
-														</table>
-														</div>
-														<!--/.row-->
-													</div>
-												</div>
-												<!--/.card-body-->
+										<!--/.table-responsive-->
+									</div>
+									<!--/.card-body-->
+									
+								</div>
+								<!--/.card-->
+								
+								
+								<div class="card">
+									
+									<div class="card-header">
+										<div class="row">
+											<div class="col-7 col-md-6">
+												<h4 class="p-1 mb-0">সম্পত্তির তফসিল - ২</h4>
 											</div>
-											<!--/.card-->
-										</div>
-										<!--/.col-md-12-->
-										
-										<div class="col-md-12">
-											<div class="card schedule mt-3">
+											<div class="col-5 col-md-6 text-end">
 												
-												<div class="card-header">
-													<div class="row">
-														<div class="col-md-6 mb-3 ">
-															<h5 class="mb-0"><strong>খতিয়ানের তথ্য</strong></h5>
-														</div>
-														<div class="col-md-6 mb-4 text-end ">
-															<div class="btn-group">
-																<a class="btn btn-sm btn-info text-white" href="schedule-2.html" style="cursor:pointer"><i class="fa fa-edit text-white"></i>&nbsp;খতিয়ান এডিট করুন</a>
-																<a class="btn btn-sm btn-danger text-white" onclick="Delete(&#39;https://dw.dolil.com/dolil/33472/delete-ledger&#39;)" style="cursor:pointer"><i class="fa fa-trash text-white"></i>&nbsp; ডিলিট করুন</a>
-															</div>
-														</div>
-													</div>
-													
-												</div>
 												
-												<!--/.card-header-->
-												<div class="card-body p-0" style="font-size:90%;">
-													
-													<div class="col-12 p-0 ">
-														<div class="table-responsive"><table class="table table-bordered table-striped text-center">
-															<thead>
-																<tr>
-																	<th colspan="4" class="border-left-0">খতিয়ান নং</th>
-																	
-																	<th colspan="5" class="border-left-0">দাগ নং</th>
-																	
-																	<th rowspan="2" class="d-none d-sm-table-cell">শ্রেনি </th>
-																	<th rowspan="2" class="d-none d-sm-table-cell">দাগে জমির পরিমাণ</th>
-																	<th rowspan="2"class="d-none d-sm-table-cell">দাগে প্রাপ্য জমি</th>
-																	<th rowspan="2"style="min-width:106px;">হস্তান্তরিত জমি</th>
-																	<th rowspan="2" class="text-center border-right-0">অপশন</th>
-																</tr>
-																<tr>
-																	<th class="border-left-0">সিএস</th>
-																	<th class="border-left-0">এসএ</th>
-																	<th class="border-left-0">আরএস</th>
-																	<th class="border-left-0">বিএস</th>
-																	<th class="border-left-0">নামজারি</th>
-																	
-																	<th class="border-left-0">সিএস</th>
-																	<th class="border-left-0">এসএ</th>
-																	<th class="border-left-0">আরএস</th>
-																	<th class="border-left-0">বিএস</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td class="border-left-0">৫০১</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	
-																	<td class="d-none d-sm-table-cell">বাড়ি</td>
-																	
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="text-end">৫৪৫ শতাংশ</td>
-																	
-																	<td class="text-center border-right-0">
-																		<div class="btn-group">
-																			<a class="btn btn-sm btn-info text-white" onclick="Show(&#39;দাগ এডিট করুন &#39;,&#39;https://dw.dolil.com/dolil/120729/edit-spot&#39;,&#39;max-width:960px&#39;)" style="cursor:pointer"><i class="fa fa-edit text-white"></i></a>
-																			<a class="btn btn-sm btn-danger text-white" onclick="Delete(&#39;https://dw.dolil.com/dolil/120729/delete-spot&#39;)" style="cursor:pointer"><i class="fa fa-trash text-white"></i></a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td class="border-left-0">৫০১</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	
-																	<td class="d-none d-sm-table-cell">বাড়ি</td>
-																	
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="text-end">৫৪৫ শতাংশ</td>
-																	
-																	<td class="text-center border-right-0">
-																		<div class="btn-group">
-																			<a class="btn btn-sm btn-info text-white" onclick="Show(&#39;দাগ এডিট করুন &#39;,&#39;https://dw.dolil.com/dolil/120729/edit-spot&#39;,&#39;max-width:960px&#39;)" style="cursor:pointer"><i class="fa fa-edit text-white"></i></a>
-																			<a class="btn btn-sm btn-danger text-white" onclick="Delete(&#39;https://dw.dolil.com/dolil/120729/delete-spot&#39;)" style="cursor:pointer"><i class="fa fa-trash text-white"></i></a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td class="border-left-0">৫০১</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	<td class="border-left-0">৫০২</td>
-																	
-																	<td class="d-none d-sm-table-cell">বাড়ি</td>
-																	
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
-																	<td class="text-end">৫৪৫ শতাংশ</td>
-																	
-																	<td class="text-center border-right-0">
-																		<div class="btn-group">
-																			<a class="btn btn-sm btn-info text-white" onclick="Show(&#39;দাগ এডিট করুন &#39;,&#39;https://dw.dolil.com/dolil/120729/edit-spot&#39;,&#39;max-width:960px&#39;)" style="cursor:pointer"><i class="fa fa-edit text-white"></i></a>
-																			<a class="btn btn-sm btn-danger text-white" onclick="Delete(&#39;https://dw.dolil.com/dolil/120729/delete-spot&#39;)" style="cursor:pointer"><i class="fa fa-trash text-white"></i></a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td colspan="10" class="text-end border-left-0">
-																		মোট
-																	</td>																		
-																	<td class="d-none d-sm-table-cell text-end">
-																		৫৫৫ শতাংশ
-																	</td>
-																	<td class="d-none d-sm-table-cell text-end">
-																		৫৫৫ শতাংশ
-																	</td>
-																	<td class="text-end">
-																		৫৫৫ শতাংশ
-																	</td>
-																	
-																	<td class="border-right-0"></td>
-																</tr>
-															</tbody>
-														</table>
-														</div>
-														<!--/.row-->
-													</div>
-												</div>
-												<!--/.card-body-->
+												<a class="btn btn-sm btn-info text-white text-end" style="cursor: pointer;" href="schedule.html"><i class="fa fa-edit"></i>&nbsp;এডিট করুন</a>
+												
+												<a class="btn btn-sm btn-danger text-white" onclick="Delete(&#39;https://dw.dolil.com/dolil/30126/delete-schedule-of-properties&#39;)" style="cursor:pointer"><i class="fa fa-trash text-white"></i>&nbsp;ডিলিট  করুন</a>
 											</div>
-											<!--/.card-->
-										</div>
-										<!--/.col-md-12-->
-										
-										<!--<div class="col-12">
-											<p><small class="text-danger">*Government Land, **Restricted Land</small></p>
-										</div> -->
-										
-										<div class="col-md-12 mb-3 text-end">
-											<a class="btn btn-sm btn-success text-white" href="khatian.html"  style="cursor:pointer"><i class="fa fa-plus"></i>&nbsp;একই মৌজায় নতুন খতিয়ান যোগ করুন</a>
 										</div>
 									</div>
+									<div class="card-body pt-0">
+										<div class="table-responsive"><table class="table table-bordered">
+											<thead>
+												<tr>
+													<th>পৌরসভা/ইউনিয়ন</th>
+													<th>মৌজা</th>
+													<th>জমির একক</th>
+													<th class="d-none d-sm-table-cell">ভূমি অফিসের নাম</th>
+													<!--<th>অপশান</th>-->
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>১নং বিশারকান্দি</td>
+													<td>১ - বিশারকান্দি</td>
+													<td>শতাংশ</td>
+													<td class="d-none d-sm-table-cell">সহকারী কমিশনার (ভূমি), বানারীপাড়া।</td>
+												</tr>
+											</tbody>
+										</table>
+										</div>
+									</div>
+									<!--./card--body-->
+									
+									<div class="card-body pt-0" style="font-size:90%;">
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped text-center">
+												<thead>
+													<tr>
+														<th colspan="4" class="border-left-0">খতিয়ান নং</th>
+														
+														<th colspan="5" class="border-left-0">দাগ নং</th>
+														
+														<th rowspan="2" class="d-none d-sm-table-cell">শ্রেনি </th>
+														<th rowspan="2" class="d-none d-sm-table-cell">দাগে জমির পরিমাণ</th>
+														<th rowspan="2"class="d-none d-sm-table-cell">দাগে প্রাপ্য জমি</th>
+														<th rowspan="2"style="min-width:106px;">হস্তান্তরিত জমি</th>
+													</tr>
+													<tr>
+														<th class="border-left-0">সিএস</th>
+														<th class="border-left-0">এসএ</th>
+														<th class="border-left-0">আরএস</th>
+														<th class="border-left-0">বিএস</th>
+														<th class="border-left-0">নামজারি</th>
+														
+														<th class="border-left-0">সিএস</th>
+														<th class="border-left-0">এসএ</th>
+														<th class="border-left-0">আরএস</th>
+														<th class="border-left-0">বিএস</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="border-left-0">৫০১</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														
+														<td class="d-none d-sm-table-cell">বাড়ি</td>
+														
+														<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
+														<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
+														<td class="text-end">৫৪৫ শতাংশ</td>
+													</tr>
+													<tr>
+														<td class="border-left-0">৫০১</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														
+														<td class="d-none d-sm-table-cell">বাড়ি</td>
+														
+														<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
+														<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
+														<td class="text-end">৫৪৫ শতাংশ</td>
+													</tr>
+													<tr>
+														<td class="border-left-0">৫০১</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														<td class="border-left-0">৫০২</td>
+														
+														<td class="d-none d-sm-table-cell">বাড়ি</td>
+														
+														<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
+														<td class="d-none d-sm-table-cell text-end">৫৪৫ শতাংশ</td>
+														<td class="text-end">৫৪৫ শতাংশ</td>
+													</tr>
+													<tr>
+														<td colspan="10" class="text-end border-left-0">
+															মোট
+														</td>																		
+														<td class="d-none d-sm-table-cell text-end">
+															৫৫৫ শতাংশ
+														</td>
+														<td class="d-none d-sm-table-cell text-end">
+															৫৫৫ শতাংশ
+														</td>
+														<td class="text-end">
+															৫৫৫ শতাংশ
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!--/.table-responsive-->
+									</div>
+									<!--/.card-body-->
+									
 								</div>
-							</div>
-							<!--/.card-->
-							
-							<div class="col-md-12 mb-3">
-								<a class="btn btn-sm btn-success text-white" href="schedule-2.html"  style="cursor:pointer"><i class="fa fa-plus"></i>&nbsp;নতুন মৌজা ও খতিয়ান যোগ করুন</a>
-							</div>
-							
-							<div class="row mt-4">
-								<div class="col-6 text-left">
-									<a class="btn btn-primary" href="ownership.html" style="background-color:#3498db; border-color:#3498db"><i class="fa fa-arrow-left"></i>&nbsp;পূর্ববর্তী ধাপ</a>
+								<!--/.card-->
+								
+								
+								<div class="col-md-12 mb-3">
+									<a class="btn btn-sm btn-success text-white" href="schedule-2.html"  style="cursor:pointer"><i class="fa fa-plus"></i>&nbsp;নতুন তফসিল যোগ করুন</a>
 								</div>
-								<div class="col-6 text-end">
-									<a href="property-boundaries.html" class="btn btn-success" type="submit">পরবর্তী ধাপ&nbsp;<i class="fa fa-arrow-right"></i></a>
+								
+								<div class="row mt-4">
+									<div class="col-6 text-left">
+										<a class="btn btn-primary" href="ownership.html" style="background-color:#3498db; border-color:#3498db"><i class="fa fa-arrow-left"></i>&nbsp;পূর্ববর্তী ধাপ</a>
+									</div>
+									<div class="col-6 text-end">
+										<a href="property-boundaries.html" class="btn btn-success" type="submit">পরবর্তী ধাপ&nbsp;<i class="fa fa-arrow-right"></i></a>
+									</div>
 								</div>
+								<!--/.row-->
+								
 							</div>
-							<!--/.row-->
-							
+							<!--/.col-12-->
 						</div>
-						<!--/.col-12-->
+						<!--/.row-->
+						
+						
+						
 					</div>
-					<!--/.row-->
-					
-					
-					
-				</div>
-			</main>
-			
-			<footer class="footer">
-				<div class="container-fluid">
-					<div class="row text-muted">
-						<div class="col-6 text-start">
-							<p class="mb-0">
-								&copy; উপকূল দলিল সেবা
-							</p>
-						</div>
-						<div class="col-6 text-end">
-							<ul class="list-inline">
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Support</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Help Center</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="privacy-policy.html">Privacy</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="terms-conditions.html">Terms</a>
-								</li>
-							</ul>
+				</main>
+				
+				<footer class="footer">
+					<div class="container-fluid">
+						<div class="row text-muted">
+							<div class="col-6 text-start">
+								<p class="mb-0">
+									&copy; উপকূল দলিল সেবা
+								</p>
+							</div>
+							<div class="col-6 text-end">
+								<ul class="list-inline">
+									<li class="list-inline-item">
+										<a class="text-muted" href="#">Support</a>
+									</li>
+									<li class="list-inline-item">
+										<a class="text-muted" href="#">Help Center</a>
+									</li>
+									<li class="list-inline-item">
+										<a class="text-muted" href="privacy-policy.html">Privacy</a>
+									</li>
+									<li class="list-inline-item">
+										<a class="text-muted" href="terms-conditions.html">Terms</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
-			</footer>
+				</footer>
+			</div>
 		</div>
-	</div>
-	
-	<script src="js/app.js"></script>
-	
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
-			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
-			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
-			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
-			// Line chart
-			new Chart(document.getElementById("chartjs-dashboard-line"), {
-				type: "line",
-				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-					datasets: [{
-						label: "Sales ($)",
-						fill: true,
-						backgroundColor: gradient,
-						borderColor: window.theme.primary,
-						data: [
-						2115,
-						1562,
-						1584,
-						1892,
-						1587,
-						1923,
-						2566,
-						2448,
-						2805,
-						3438,
-						2917,
-						3327
-						]
-					}]
+		
+		<script src="js/app.js"></script>
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+				var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+				gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+				gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+				// Line chart
+				new Chart(document.getElementById("chartjs-dashboard-line"), {
+					type: "line",
+					data: {
+						labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+						datasets: [{
+							label: "Sales ($)",
+							fill: true,
+							backgroundColor: gradient,
+							borderColor: window.theme.primary,
+							data: [
+							2115,
+							1562,
+							1584,
+							1892,
+							1587,
+							1923,
+							2566,
+							2448,
+							2805,
+							3438,
+							2917,
+							3327
+							]
+						}]
+					},
+					options: {
+						maintainAspectRatio: false,
+						legend: {
+							display: false
+						},
+						tooltips: {
+							intersect: false
+						},
+						hover: {
+							intersect: true
+						},
+						plugins: {
+							filler: {
+								propagate: false
+							}
+						},
+						scales: {
+							xAxes: [{
+								reverse: true,
+								gridLines: {
+									color: "rgba(0,0,0,0.0)"
+								}
+							}],
+							yAxes: [{
+								ticks: {
+									stepSize: 1000
+								},
+								display: true,
+								borderDash: [3, 3],
+								gridLines: {
+									color: "rgba(0,0,0,0.0)"
+								}
+							}]
+						}
+					}
+				});
+			});
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				// Pie chart
+				new Chart(document.getElementById("chartjs-dashboard-pie"), {
+					type: "pie",
+					data: {
+						labels: ["Chrome", "Firefox", "IE"],
+						datasets: [{
+							data: [4306, 3801, 1689],
+							backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger
+							],
+							borderWidth: 5
+						}]
+					},
+					options: {
+						responsive: !window.MSInputMethodContext,
+						maintainAspectRatio: false,
+						legend: {
+							display: false
+						},
+						cutoutPercentage: 75
+					}
+				});
+			});
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				// Bar chart
+				new Chart(document.getElementById("chartjs-dashboard-bar"), {
+					type: "bar",
+					data: {
+						labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+						datasets: [{
+							label: "This year",
+							backgroundColor: window.theme.primary,
+							borderColor: window.theme.primary,
+							hoverBackgroundColor: window.theme.primary,
+							hoverBorderColor: window.theme.primary,
+							data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+							barPercentage: .75,
+							categoryPercentage: .5
+						}]
+					},
+					options: {
+						maintainAspectRatio: false,
+						legend: {
+							display: false
+						},
+						scales: {
+							yAxes: [{
+								gridLines: {
+									display: false
+								},
+								stacked: false,
+								ticks: {
+									stepSize: 20
+								}
+							}],
+							xAxes: [{
+								stacked: false,
+								gridLines: {
+									color: "transparent"
+								}
+							}]
+						}
+					}
+				});
+			});
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				var markers = [{
+					coords: [31.230391, 121.473701],
+					name: "Shanghai"
 				},
-				options: {
-					maintainAspectRatio: false,
-					legend: {
-						display: false
-					},
-					tooltips: {
-						intersect: false
-					},
-					hover: {
-						intersect: true
-					},
-					plugins: {
-						filler: {
-							propagate: false
+				{
+					coords: [28.704060, 77.102493],
+					name: "Delhi"
+				},
+				{
+					coords: [6.524379, 3.379206],
+					name: "Lagos"
+				},
+				{
+					coords: [35.689487, 139.691711],
+					name: "Tokyo"
+				},
+				{
+					coords: [23.129110, 113.264381],
+					name: "Guangzhou"
+				},
+				{
+					coords: [40.7127837, -74.0059413],
+					name: "New York"
+				},
+				{
+					coords: [34.052235, -118.243683],
+					name: "Los Angeles"
+				},
+				{
+					coords: [41.878113, -87.629799],
+					name: "Chicago"
+				},
+				{
+					coords: [51.507351, -0.127758],
+					name: "London"
+				},
+				{
+					coords: [40.416775, -3.703790],
+					name: "Madrid "
+				}
+				];
+				var map = new jsVectorMap({
+					map: "world",
+					selector: "#world_map",
+					zoomButtons: true,
+					markers: markers,
+					markerStyle: {
+						initial: {
+							r: 9,
+							strokeWidth: 7,
+							stokeOpacity: .4,
+							fill: window.theme.primary
+						},
+						hover: {
+							fill: window.theme.primary,
+							stroke: window.theme.primary
 						}
 					},
-					scales: {
-						xAxes: [{
-							reverse: true,
-							gridLines: {
-								color: "rgba(0,0,0,0.0)"
-							}
-						}],
-						yAxes: [{
-							ticks: {
-								stepSize: 1000
-							},
-							display: true,
-							borderDash: [3, 3],
-							gridLines: {
-								color: "rgba(0,0,0,0.0)"
-							}
-						}]
-					}
-				}
+					zoomOnScroll: false
+				});
+				window.addEventListener("resize", () => {
+					map.updateSize();
+				});
 			});
-		});
-	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			// Pie chart
-			new Chart(document.getElementById("chartjs-dashboard-pie"), {
-				type: "pie",
-				data: {
-					labels: ["Chrome", "Firefox", "IE"],
-					datasets: [{
-						data: [4306, 3801, 1689],
-						backgroundColor: [
-						window.theme.primary,
-						window.theme.warning,
-						window.theme.danger
-						],
-						borderWidth: 5
-					}]
-				},
-				options: {
-					responsive: !window.MSInputMethodContext,
-					maintainAspectRatio: false,
-					legend: {
-						display: false
-					},
-					cutoutPercentage: 75
-				}
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+				var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+				document.getElementById("datetimepicker-dashboard").flatpickr({
+					inline: true,
+					prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+					nextArrow: "<span title=\"Next month\">&raquo;</span>",
+					defaultDate: defaultDate
+				});
 			});
-		});
-	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			// Bar chart
-			new Chart(document.getElementById("chartjs-dashboard-bar"), {
-				type: "bar",
-				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-					datasets: [{
-						label: "This year",
-						backgroundColor: window.theme.primary,
-						borderColor: window.theme.primary,
-						hoverBackgroundColor: window.theme.primary,
-						hoverBorderColor: window.theme.primary,
-						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
-						barPercentage: .75,
-						categoryPercentage: .5
-					}]
-				},
-				options: {
-					maintainAspectRatio: false,
-					legend: {
-						display: false
-					},
-					scales: {
-						yAxes: [{
-							gridLines: {
-								display: false
-							},
-							stacked: false,
-							ticks: {
-								stepSize: 20
-							}
-						}],
-						xAxes: [{
-							stacked: false,
-							gridLines: {
-								color: "transparent"
-							}
-						}]
-					}
-				}
-			});
-		});
-	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			var markers = [{
-				coords: [31.230391, 121.473701],
-				name: "Shanghai"
-			},
-			{
-				coords: [28.704060, 77.102493],
-				name: "Delhi"
-			},
-			{
-				coords: [6.524379, 3.379206],
-				name: "Lagos"
-			},
-			{
-				coords: [35.689487, 139.691711],
-				name: "Tokyo"
-			},
-			{
-				coords: [23.129110, 113.264381],
-				name: "Guangzhou"
-			},
-			{
-				coords: [40.7127837, -74.0059413],
-				name: "New York"
-			},
-			{
-				coords: [34.052235, -118.243683],
-				name: "Los Angeles"
-			},
-			{
-				coords: [41.878113, -87.629799],
-				name: "Chicago"
-			},
-			{
-				coords: [51.507351, -0.127758],
-				name: "London"
-			},
-			{
-				coords: [40.416775, -3.703790],
-				name: "Madrid "
-			}
-			];
-			var map = new jsVectorMap({
-				map: "world",
-				selector: "#world_map",
-				zoomButtons: true,
-				markers: markers,
-				markerStyle: {
-					initial: {
-						r: 9,
-						strokeWidth: 7,
-						stokeOpacity: .4,
-						fill: window.theme.primary
-					},
-					hover: {
-						fill: window.theme.primary,
-						stroke: window.theme.primary
-					}
-				},
-				zoomOnScroll: false
-			});
-			window.addEventListener("resize", () => {
-				map.updateSize();
-			});
-		});
-	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
-			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
-			document.getElementById("datetimepicker-dashboard").flatpickr({
-				inline: true,
-				prevArrow: "<span title=\"Previous month\">&laquo;</span>",
-				nextArrow: "<span title=\"Next month\">&raquo;</span>",
-				defaultDate: defaultDate
-			});
-		});
-	</script>
+		</script>
+		
+	</body>
 	
-</body>
-
 </html>

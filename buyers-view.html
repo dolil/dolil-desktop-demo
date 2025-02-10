@@ -101,6 +101,7 @@
 					<a class="sidebar-toggle js-sidebar-toggle">
 						<i class="hamburger align-self-center"></i>
 					</a>
+					<h4 class="mb-0">অপ্রত্যাহারযোগ্য পাওয়ার অব অ্যাটর্নি (পণমূল্য ব্যতীত)</h4>
 					
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav navbar-align">
@@ -196,14 +197,8 @@
 							<div class="col-12">
 								
 								
-								<div class="card">
-									<div class="card-header transparent-header">
-										<div class="d-flex justify-content-between">
-											<h4 style="margin-bottom: 0px !important">অপ্রত্যাহারযোগ্য পাওয়ার অব অ্যাটর্নি (পণমূল্য ব্যতীত)</h4>
-											<a href="https://dw.dolil.com/report-an-issue" class="btn btn-sm btn-danger text-white"><i class="fa fa-flag"></i>&nbsp;Report Error</a>
-										</div>
-									</div>			
-									<div class="card-body pt-0 pb-2">
+								<div class="">
+									<div class="pt-0 pb-3">
 										
 										<style type="text/css" media="screen">
 											.steps-form {
@@ -273,7 +268,7 @@
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="attorney.html" type="button" class="btn btn-default btn-circle">৪</a>
-													<p style="font-size: 11px;">প্রতিনিধি</p>
+													<p style="font-size: 11px;">অ্যাটর্নি</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="ownership.html" type="button" class="btn btn-default btn-circle">৫</a>
@@ -297,7 +292,7 @@
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="payments.html" type="button" class="btn btn-default btn-circle">১০</a>
-													<p style="font-size: 11px;">প্রদত্ত অর্থ</p>
+													<p style="font-size: 11px;">সম্পত্তির মূল্য</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="witnesses.html" type="button" class="btn btn-default btn-circle">১১</a>
@@ -322,6 +317,7 @@
 									<div class="card-header transparent-header">
 										<div class="d-flex justify-content-between">
 											<h3 style="margin-bottom: 0px !important">দলিল গ্রহীতা/ক্রেতাগণ</h3>
+											<a class="btn btn-sm btn-success text-white" href="buyers.html" style="cursor:pointer"><i class="fa fa-plus"></i>&nbsp; গ্রহীতা যোগ করুন</a>
 										</div>
 									</div>				
 									<div class="card-body pt-0">
@@ -350,7 +346,7 @@
 															<td class="btn-group-max">
 																<div class="btn-group d-flex">
 																	<a class="btn btn-sm btn-info text-white" href="buyers.html" style="cursor:pointer"><i class="fa fa-edit"></i>&nbsp;এডিট</a>
-																	<a class="btn btn-sm btn-info text-white" href="https://dw.dolil.com/dolil/68725/36387/buyers/copy"><i class="fa fa-copy"></i>&nbsp;কপি</a>
+																	<a class="btn btn-sm btn-primary text-white" href="https://dw.dolil.com/dolil/68725/36387/buyers/copy"><i class="fa fa-copy"></i>&nbsp;কপি</a>
 																	<a class="btn btn-sm btn-danger text-white" onclick="Delete('https://dw.dolil.com/dolil/68725/36387/buyers/delete')" style="cursor:pointer"><i class="fa fa-trash"></i>&nbsp;ডিলিট</a>
 																</div>
 															</td>					   
@@ -365,7 +361,7 @@
 															<td class="btn-group-max">
 																<div class="btn-group d-flex">
 																	<a class="btn btn-sm btn-info text-white" href="buyers.html" style="cursor:pointer"><i class="fa fa-edit"></i>&nbsp;এডিট</a>
-																	<a class="btn btn-sm btn-info text-white" href="https://dw.dolil.com/dolil/68725/36388/buyers/copy"><i class="fa fa-copy"></i>&nbsp;কপি</a>
+																	<a class="btn btn-sm btn-primary text-white" href="https://dw.dolil.com/dolil/68725/36388/buyers/copy"><i class="fa fa-copy"></i>&nbsp;কপি</a>
 																	<a class="btn btn-sm btn-danger text-white" onclick="Delete('https://dw.dolil.com/dolil/68725/36388/buyers/delete')" style="cursor:pointer"><i class="fa fa-trash"></i>&nbsp;ডিলিট</a>
 																</div>
 															</td>					   
@@ -572,87 +568,87 @@
 					}
 				});
 			});
-		</script>
-		<script>
+			</script>
+			<script>
 			document.addEventListener("DOMContentLoaded", function() {
-				var markers = [{
-					coords: [31.230391, 121.473701],
-					name: "Shanghai"
-				},
-				{
-					coords: [28.704060, 77.102493],
-					name: "Delhi"
-				},
-				{
-					coords: [6.524379, 3.379206],
-					name: "Lagos"
-				},
-				{
-					coords: [35.689487, 139.691711],
-					name: "Tokyo"
-				},
-				{
-					coords: [23.129110, 113.264381],
-					name: "Guangzhou"
-				},
-				{
-					coords: [40.7127837, -74.0059413],
-					name: "New York"
-				},
-				{
-					coords: [34.052235, -118.243683],
-					name: "Los Angeles"
-				},
-				{
-					coords: [41.878113, -87.629799],
-					name: "Chicago"
-				},
-				{
-					coords: [51.507351, -0.127758],
-					name: "London"
-				},
-				{
-					coords: [40.416775, -3.703790],
-					name: "Madrid "
-				}
-				];
-				var map = new jsVectorMap({
-					map: "world",
-					selector: "#world_map",
-					zoomButtons: true,
-					markers: markers,
-					markerStyle: {
-						initial: {
-							r: 9,
-							strokeWidth: 7,
-							stokeOpacity: .4,
-							fill: window.theme.primary
-						},
-						hover: {
-							fill: window.theme.primary,
-							stroke: window.theme.primary
-						}
-					},
-					zoomOnScroll: false
-				});
-				window.addEventListener("resize", () => {
-					map.updateSize();
-				});
+			var markers = [{
+			coords: [31.230391, 121.473701],
+			name: "Shanghai"
+			},
+			{
+			coords: [28.704060, 77.102493],
+			name: "Delhi"
+			},
+			{
+			coords: [6.524379, 3.379206],
+			name: "Lagos"
+			},
+			{
+			coords: [35.689487, 139.691711],
+			name: "Tokyo"
+			},
+			{
+			coords: [23.129110, 113.264381],
+			name: "Guangzhou"
+			},
+			{
+			coords: [40.7127837, -74.0059413],
+			name: "New York"
+			},
+			{
+			coords: [34.052235, -118.243683],
+			name: "Los Angeles"
+			},
+			{
+			coords: [41.878113, -87.629799],
+			name: "Chicago"
+			},
+			{
+			coords: [51.507351, -0.127758],
+			name: "London"
+			},
+			{
+			coords: [40.416775, -3.703790],
+			name: "Madrid "
+			}
+			];
+			var map = new jsVectorMap({
+			map: "world",
+			selector: "#world_map",
+			zoomButtons: true,
+			markers: markers,
+			markerStyle: {
+			initial: {
+			r: 9,
+			strokeWidth: 7,
+			stokeOpacity: .4,
+			fill: window.theme.primary
+			},
+			hover: {
+			fill: window.theme.primary,
+			stroke: window.theme.primary
+			}
+			},
+			zoomOnScroll: false
 			});
-		</script>
-		<script>
+			window.addEventListener("resize", () => {
+			map.updateSize();
+			});
+			});
+			</script>
+			<script>
 			document.addEventListener("DOMContentLoaded", function() {
-				var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
-				var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
-				document.getElementById("datetimepicker-dashboard").flatpickr({
-					inline: true,
-					prevArrow: "<span title=\"Previous month\">&laquo;</span>",
-					nextArrow: "<span title=\"Next month\">&raquo;</span>",
-					defaultDate: defaultDate
-				});
+			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+			document.getElementById("datetimepicker-dashboard").flatpickr({
+			inline: true,
+			prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+			nextArrow: "<span title=\"Next month\">&raquo;</span>",
+			defaultDate: defaultDate
 			});
-		</script>
-		
-	</body>
-	
-</html>
+			});
+			</script>
+			
+			</body>
+			
+			</html>								

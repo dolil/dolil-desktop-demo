@@ -101,6 +101,7 @@
 					<a class="sidebar-toggle js-sidebar-toggle">
 						<i class="hamburger align-self-center"></i>
 					</a>
+					<h4 class="mb-0">অপ্রত্যাহারযোগ্য পাওয়ার অব অ্যাটর্নি (পণমূল্য ব্যতীত)</h4>
 					
 					<div class="navbar-collapse collapse">
 						<ul class="navbar-nav navbar-align">
@@ -196,14 +197,8 @@
 							<div class="col-12">
 								
 								
-								<div class="card">
-									<div class="card-header transparent-header pt-3">
-										<div class="d-flex justify-content-between">
-											<h4 style="margin-bottom: 0px !important">অপ্রত্যাহারযোগ্য পাওয়ার অব অ্যাটর্নি (পণমূল্য ব্যতীত)</h4>
-											<a href="https://dw.dolil.com/report-an-issue" class="btn btn-sm btn-danger text-white"><i class="fa fa-flag"></i>&nbsp;Report Error</a>
-										</div>
-									</div>			
-									<div class="card-body pt-0 pb-2">
+								<div class="">
+									<div class="pt-0 pb-3">
 										
 										<style type="text/css" media="screen">
 											.steps-form {
@@ -273,7 +268,7 @@
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="attorney.html" type="button" class="btn btn-success btn-circle">৪</a>
-													<p style="font-size: 11px;">প্রতিনিধি</p>
+													<p style="font-size: 11px;">অ্যাটর্নি</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="ownership.html" type="button" class="btn btn-success btn-circle">৫</a>
@@ -297,7 +292,7 @@
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="payments.html" type="button" class="btn btn-default btn-circle">১০</a>
-													<p style="font-size: 11px;">প্রদত্ত অর্থ</p>
+													<p style="font-size: 11px;">সম্পত্তির মূল্য</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
 													<a href="witnesses.html" type="button" class="btn btn-default btn-circle">১১</a>
@@ -317,6 +312,7 @@
 									</div>
 									<!--/.card-body-->
 								</div>
+								<!--/.card-->
 								
 								<div class="card mb-0">
 									<div class="card-header transparent-header pt-3">
@@ -325,92 +321,63 @@
 										</div>
 									</div>
 									
-									<div class="card-body pb-0">
-										
-										<h4>মৌজাঃ ৭ নং আলামদি</h4>
+									<div class="card-body pb-0 pt-0">
 										
 										<form action="https://dw.dolil.com/dolil/31193/property-boundaries-update" method="post" enctype="multipart/form-data">
 											<input type="hidden" name="_token" value="Iw9NRPgGXToleGkBiI712fo80B16wf6KOkzfXj1D">    
 											
-											<div class="row">
-												<div class="col-12 col-md-6 mb-3">
-													<div class="input-group pr-0">
-														<div class="input-group-prepend">
-															<span class="input-group-text">উত্তর *</span>
-														</div>
-														<input type="text" name="north" id="north" class="form-control" value="" required="">
-													</div>
-												</div>
-												<div class="col-12 col-md-6 mb-3">
-													<div class="input-group pr-0">
-														<div class="input-group-prepend">
-															<span class="input-group-text">দক্ষিণ *</span>
-														</div>
-														<input type="text" name="south" id="south" class="form-control" value="" required="">
-													</div>
-												</div>
-												<div class="col-12 col-md-6 mb-3">
-													<div class="input-group pr-0">
-														<div class="input-group-prepend">
-															<span class="input-group-text">পূর্ব *</span>
-														</div>
-														<input type="text" name="east" id="east" class="form-control" value="" required="">
-													</div>
-												</div>
-												<div class="col-12 col-md-6 mb-3">
-													<div class="input-group pr-0">
-														<div class="input-group-prepend">
-															<span class="input-group-text">পশ্চিম *</span>
-														</div>
-														<input type="text" name="west" id="west" class="form-control" value="" required="">
-													</div>
-												</div>
-											</div>
+											
+											<table class="table table-responsive table-bordered table-striped table-khatian">
+												<thead>
+													<tr>
+														<th scope="col">মৌজা</th>
+														<th scope="col">উত্তর<span class="text-danger">&nbsp;*</span></th>
+														<th scope="col">দক্ষিণ<span class="text-danger">&nbsp;*</span></th>
+														<th scope="col">পূর্ব<span class="text-danger">&nbsp;*</span></th>
+														<th scope="col">পশ্চিম<span class="text-danger">&nbsp;*</span></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">৭ নং আলামদি</th>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													</tr>
+												</tbody>
+											</table>
 										</form>									
 									</div>
 									<!--/.card-body-->
 									
 									<div class="card-body">
 										
-										<h4>মৌজাঃ ৭২ নং বিশারকান্দি</h4>
-										
 										<form action="https://dw.dolil.com/dolil/31193/property-boundaries-update" method="post" enctype="multipart/form-data">
-											<input type="hidden" name="_token" value="Iw9NRPgGXToleGkBiI712fo80B16wf6KOkzfXj1D">    
+											<input type="hidden" name="_token" value="Iw9NRPgGXToleGkBiI712fo80B16wf6KOkzfXj1D">
 											
-											<div class="row">
-												<div class="col-12 col-md-6 mb-3">
-													<div class="input-group pr-0">
-														<div class="input-group-prepend">
-															<span class="input-group-text">উত্তর *</span>
-														</div>
-														<input type="text" name="north" id="north" class="form-control" value="" required="">
-													</div>
-												</div>
-												<div class="col-12 col-md-6 mb-3">
-													<div class="input-group pr-0">
-														<div class="input-group-prepend">
-															<span class="input-group-text">দক্ষিণ *</span>
-														</div>
-														<input type="text" name="south" id="south" class="form-control" value="" required="">
-													</div>
-												</div>
-												<div class="col-12 col-md-6 mb-3">
-													<div class="input-group pr-0">
-														<div class="input-group-prepend">
-															<span class="input-group-text">পূর্ব *</span>
-														</div>
-														<input type="text" name="east" id="east" class="form-control" value="" required="">
-													</div>
-												</div>
-												<div class="col-12 col-md-6 mb-3">
-													<div class="input-group pr-0">
-														<div class="input-group-prepend">
-															<span class="input-group-text">পশ্চিম *</span>
-														</div>
-														<input type="text" name="west" id="west" class="form-control" value="" required="">
-													</div>
-												</div>
-											</div>
+											<table class="table table-responsive table-bordered table-striped table-khatian">
+												<thead>
+													<tr>
+														<th scope="col">মৌজা</th>
+														<th scope="col">উত্তর<span class="text-danger">&nbsp;*</span></th>
+														<th scope="col">দক্ষিণ<span class="text-danger">&nbsp;*</span></th>
+														<th scope="col">পূর্ব<span class="text-danger">&nbsp;*</span></th>
+														<th scope="col">পশ্চিম<span class="text-danger">&nbsp;*</span></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">৭২ নং বিশারকান্দি</th>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													</tr>
+												</tbody>
+											</table>
+											
+											
 											<div class="row">
 												<div class="col-md-12 mb-3">
 													<div class="form-group">
@@ -419,8 +386,8 @@
 													</div>
 												</div>
 											</div>
-											<div class="row">
-												<div class="col-12 col-md-4 mb-3">
+											<div class="row text-end">
+												<div class="col-12 col-md-7 mb-3">
 													<a href="property-boundaries-view.html" type="submit" class="btn btn-md btn-success"><i class="fa fa-save"></i>&nbsp; সংরক্ষণ করুন</a>
 												</div>
 											</div>
