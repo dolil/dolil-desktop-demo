@@ -263,10 +263,6 @@
 													<p style="font-size: 11px;">গ্রহীতা</p>
 												</div>
 												<div class="steps-step" style="width: 8.33% !important">
-													<a href="buyers.html" type="button" class="btn btn-success btn-circle">২</a>
-													<p style="font-size: 11px;">গ্রহীতা</p>
-												</div>
-												<div class="steps-step" style="width: 8.33% !important">
 													<a href="sellers.html" type="button" class="btn btn-success btn-circle">৩</a>
 													<p style="font-size: 11px;">দাতা</p>
 												</div>
@@ -398,492 +394,475 @@
 								
 								
 								<div class="card mb-3">
-									<div class="card-header">
-										<h4> </h4>
-									</div>
-									<div class="card-body pt-0">
+									<div class="card-body">
 										
 										<div class="form-group row mb-3 mt-0">
-											<div class="col-6">
-												<div class="input-group mb-3">
-													<div class="input-group-prepend">
-														<div class="input-group-text">
-															<label class="form-check-label" for="inlineCheckbox3">খতিয়ানের ধরণ</label>
-														</div>
-													</div>
+											<div class="input-group mb-3">
+												<div class="input-group-prepend">
 													<div class="input-group-text">
-														<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-														<label class="form-check-label" for="inlineCheckbox1" style="margin-left:5px;">সিএস</label>
+														<label class="form-check-label" for="inlineCheckbox3">খতিয়ানের ধরণ</label>
 													</div>
+												</div>
+												<div class="input-group-text">
+													<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+													<label class="form-check-label" for="inlineCheckbox1" style="margin-left:5px;">সিএস</label>
+												</div>
+												<div class="input-group-text">
+													<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+													<label class="form-check-label" for="inlineCheckbox2" style="margin-left:5px;">এসএ</label>
+												</div>
+												<div class="input-group-text">
+													<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+													<label class="form-check-label" for="inlineCheckbox3" style="margin-left:5px;">আরএস</label>
+												</div>
+												<div class="input-group-text">
+													<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+													<label class="form-check-label" for="inlineCheckbox3" style="margin-left:5px;">বিএস</label>
+												</div>
+												<div class="input-group-text">
+													<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" checked>
+													<label class="form-check-label" for="inlineCheckbox3" style="margin-left:5px;">নামজারি</label>
+												</div>
+												<div class="input-group-prepend">
 													<div class="input-group-text">
-														<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-														<label class="form-check-label" for="inlineCheckbox2" style="margin-left:5px;">এসএ</label>
+														<input type="checkbox" aria-label=""><label class="form-check-label" for="inlineCheckbox3" style="margin-left:10px;">ডিপি খতিয়ান</label>
 													</div>
-													<div class="input-group-text">
-														<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-														<label class="form-check-label" for="inlineCheckbox3" style="margin-left:5px;">আরএস</label>
-													</div>
-													<div class="input-group-text">
-														<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-														<label class="form-check-label" for="inlineCheckbox3" style="margin-left:5px;">বিএস</label>
-													</div>
-													<div class="input-group-text">
-														<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" checked>
-														<label class="form-check-label" for="inlineCheckbox3" style="margin-left:5px;">নামজারি</label>
-													</div>
+												</div>
+												<select class="form-control" id="inputGroupSelect01" disabled>
+													<option selected>Choose...</option>
+													<option value="1">সিএস</option>
+													<option value="2">এসএ</option>
+													<option value="3">আরএস</option>
+													<option value="3">বিএস</option>
+												</select>
+												
+												<div class="input-group-prepend">
+													<span class="input-group-text">জমির একক<span class="text-danger">&nbsp;*</span></span>
+												</div>
+												<select name="unit_of_land_id" id="unit_of_land_id" class="custom-select" required="">
+													<option value="">Choose..</option>
+													<option value="1" >একর</option>
+													<option value="4">শতাংশ</option>
+													<option value="7">অযুতাংশ</option>
+												</select>
+											</div>
+											
+																				
+											<!-- khotiyan information -->
+											<table class="table table-responsive table-bordered table-striped table-khatian">
+												<thead>
+													<tr>
+														<th rowspan="2" scope="col">#</th>
+														<th colspan="5" scope="col" class="text-center">খতিয়ান নং</th>
+														<th colspan="4" scope="col" class="text-center">দাগ নং</th>
+														
+														<th rowspan="2" scope="col">শ্রেণি</th>
+														<th rowspan="2" scope="col">বর্তমান শ্রেণি <input type="checkbox" name="" id="dp_survey_class_check"></th>
+														<th rowspan="2" scope="col">দাগে খতিয়ানের জমি</th>
+														<th rowspan="2" scope="col">হস্তান্তরিত জমি</th>
+														<th rowspan="2" scope="col">Action</th>
+													</tr>
+													<tr>
+														<th scope="col">সিএস</th>
+														<th scope="col">এসএ</th>
+														<th scope="col">আরএস</th>
+														<th scope="col">বিএস</th>
+														<th scope="col">নামজারি</th>
+														
+														<th scope="col">সিএস</th>
+														<th scope="col">এসএ</th>
+														<th scope="col">আরএস</th>
+														<th scope="col">বিএস</th>
+														
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">১</th>
+														
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														
+														<td>
+															<select name="dp_ledger_class" id="dp_survey_class" class="form-control">
+																<option value="">Choose..</option>
+																<option value="ধানি">ধানি</option>
+																<option value="বাড়ি">বাড়ি</option>
+																<option value="বন">বন</option>
+																<option value="জঙ্গল">জঙ্গল</option>
+																<option value="টিলা">টিলা</option>
+																<option value="পুকুর">পুকুর</option>
+																<option value="বিল">বিল</option>
+																<option value="মাটিয়াল">মাটিয়াল</option>
+																<option value="নাল">নাল</option>
+																
+															</select>
+														</td>
+														<td>
+															<select name="dp_ledger_class" id="dp_survey_class" class="form-control" disabled>
+																<option value="">Choose..</option>
+																<option value="ধানি">ধানি</option>
+																<option value="বাড়ি">বাড়ি</option>
+																<option value="বন">বন</option>
+																<option value="জঙ্গল">জঙ্গল</option>
+																<option value="টিলা">টিলা</option>
+																<option value="পুকুর">পুকুর</option>
+																<option value="বিল">বিল</option>
+																<option value="মাটিয়াল">মাটিয়াল</option>
+																<option value="নাল">নাল</option>
+																
+															</select>
+														</td>
+														<td><input type="number" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="number" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td class="btn-group-max">
+															<div class="btn-group d-flex">
+																<a class="btn btn-sm btn-success text-white" href="#"><i class="fa fa-plus text-white"></i></a>
+																<a class="btn btn-sm btn-primary text-white" href="#"><i class="fa fa-copy text-white"></i></a>
+																<a class="btn btn-sm btn-danger text-white"><span class="d-block"><i class="fa fa-minus text-white"></i></span></a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">২</th>
+														
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													</tr>
+													<tr>
+														<th scope="row">৩</th>
+														
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+														<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													</tr>
+												</tbody>
+											</table>
+											
+											
+											<div class="form-group row">
+												<div class="col-md-12 mb-4  mt-3">
+													<h5>প্রযোজ্য ক্ষেত্রে তফসিলে উল্লিখিত সম্পত্তি সম্পর্কে কোন অতিরিক্ত মন্তব্য থাকলে এখানে লিখুনঃ</h5>
+													<textarea name="first_textbox" class="form-control" id="first_textbox" cols="30" rows="3"></textarea>
+													
 												</div>
 											</div>
 											
-											<div class="col">
-												<div class="form-check form-check-inline">
-													<div class="input-group mb-3">
-														<div class="input-group-prepend">
-															<div class="input-group-text">
-																<input type="checkbox" aria-label=""><label class="form-check-label" for="inlineCheckbox3" style="margin-left:10px;">ডিপি খতিয়ান</label>
-															</div>
-														</div>
-														<select class="custom-select" id="inputGroupSelect01" disabled>
-															<option selected>Choose...</option>
-															<option value="1">সিএস</option>
-															<option value="2">এসএ</option>
-															<option value="3">আরএস</option>
-															<option value="3">বিএস</option>
-														</select>
-													</div>
-												</div>
-												
-												
-												<div class="form-check form-check-inline">
-													<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">জমির একক<span class="text-danger">&nbsp;*</span></span>
-														</div>
-														<select name="unit_of_land_id" id="unit_of_land_id" class="custom-select" required="">
-															<option value="">Choose..</option>
-															<option value="1" >একর</option>
-															<option value="4">শতাংশ</option>
-															<option value="7">অযুতাংশ</option>
-														</select>
-													</div>
+											<div class="form-group row">
+												<div class="col-md-12 mb-4">
+													<label>সাধারণ মন্তব্য সকল দলিলের জন্য প্রযোজ্য এখানে থাকবে যেটা ডাটাবাযে সেভ হবে...............</label>
 												</div>
 											</div>
-										</div>
-										
-										<!-- khotiyan information -->
-										<table class="table table-responsive table-bordered table-striped table-khatian">
-											<thead>
-												<tr>
-													<th rowspan="2" scope="col">#</th>
-													<th colspan="5" scope="col" class="text-center">খতিয়ান নং</th>
-													<th colspan="4" scope="col" class="text-center">দাগ নং</th>
-													
-													<th rowspan="2" scope="col">শ্রেণি</th>
-													<th rowspan="2" scope="col">বর্তমান শ্রেণি <input type="checkbox" name="" id="dp_survey_class_check"></th>
-													<th rowspan="2" scope="col">দাগে খতিয়ানের জমি</th>
-													<th rowspan="2" scope="col">হস্তান্তরিত জমি</th>
-													<th rowspan="2" scope="col">Action</th>
-												</tr>
-												<tr>
-													<th scope="col">সিএস</th>
-													<th scope="col">এসএ</th>
-													<th scope="col">আরএস</th>
-													<th scope="col">বিএস</th>
-													<th scope="col">নামজারি</th>
-													
-													<th scope="col">সিএস</th>
-													<th scope="col">এসএ</th>
-													<th scope="col">আরএস</th>
-													<th scope="col">বিএস</th>
-													
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<th scope="row">১</th>
-													
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													
-													<td>
-														<select name="dp_ledger_class" id="dp_survey_class" class="form-control">
-															<option value="">Choose..</option>
-															<option value="ধানি">ধানি</option>
-															<option value="বাড়ি">বাড়ি</option>
-															<option value="বন">বন</option>
-															<option value="জঙ্গল">জঙ্গল</option>
-															<option value="টিলা">টিলা</option>
-															<option value="পুকুর">পুকুর</option>
-															<option value="বিল">বিল</option>
-															<option value="মাটিয়াল">মাটিয়াল</option>
-															<option value="নাল">নাল</option>
-															
-														</select>
-													</td>
-													<td>
-														<select name="dp_ledger_class" id="dp_survey_class" class="form-control" disabled>
-															<option value="">Choose..</option>
-															<option value="ধানি">ধানি</option>
-															<option value="বাড়ি">বাড়ি</option>
-															<option value="বন">বন</option>
-															<option value="জঙ্গল">জঙ্গল</option>
-															<option value="টিলা">টিলা</option>
-															<option value="পুকুর">পুকুর</option>
-															<option value="বিল">বিল</option>
-															<option value="মাটিয়াল">মাটিয়াল</option>
-															<option value="নাল">নাল</option>
-															
-														</select>
-													</td>
-													<td><input type="number" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="number" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td class="btn-group-max">
-														<div class="btn-group d-flex">
-															<a class="btn btn-sm btn-success text-white" href="#"><i class="fa fa-plus text-white"></i></a>
-															<a class="btn btn-sm btn-primary text-white" href="#"><i class="fa fa-copy text-white"></i></a>
-															<a class="btn btn-sm btn-danger text-white"><span class="d-block"><i class="fa fa-minus text-white"></i></span></a>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<th scope="row">২</th>
-													
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-												</tr>
-												<tr>
-													<th scope="row">৩</th>
-													
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
-												</tr>
-											</tbody>
-										</table>
-										
-										
-										<div class="form-group row">
-											<div class="col-md-12 mb-4  mt-3">
-												<h5>প্রযোজ্য ক্ষেত্রে তফসিলে উল্লিখিত সম্পত্তি সম্পর্কে কোন অতিরিক্ত মন্তব্য থাকলে এখানে লিখুনঃ</h5>
-												<textarea name="first_textbox" class="form-control" id="first_textbox" cols="30" rows="3"></textarea>
-												
+											
+											
+											<div class="form-group row">
+												<div class="col-md-12 text-center">
+													<a href="schedule-view.html" type="submit" class="btn btn-md btn-success"><i class="fa fa-save"></i>&nbsp;সংরক্ষন করুন</a>
+												</div>
 											</div>
+											
 										</div>
-										
-										<div class="form-group row">
-											<div class="col-md-12 mb-4">
-												<label>সাধারণ মন্তব্য সকল দলিলের জন্য প্রযোজ্য এখানে থাকবে যেটা ডাটাবাযে সেভ হবে...............</label>
-											</div>
-										</div>
-										
-										
-										<div class="form-group row">
-											<div class="col-md-12 text-center">
-												<a href="schedule-view.html" type="submit" class="btn btn-md btn-success"><i class="fa fa-save"></i>&nbsp;সংরক্ষন করুন</a>
-											</div>
-										</div>
-										
+										<!--/.card-body-->
 									</div>
-									<!--/.card-body-->
+									<!--/.card-->
+									
+									
 								</div>
-								<!--/.card-->
-								
-								
+								<!--/.col-12-->
 							</div>
-							<!--/.col-12-->
+							
+							
+							
 						</div>
-						
-						
-						
-					</div>
-				</main>
-				
-				<footer class="footer">
-					<div class="container-fluid">
-						<div class="row text-muted">
-							<div class="col-6 text-start">
-								<p class="mb-0">
-									&copy; উপকূল দলিল সেবা
-								</p>
-							</div>
-							<div class="col-6 text-end">
-								<ul class="list-inline">
-									<li class="list-inline-item">
-										<a class="text-muted" href="#">Support</a>
-									</li>
-									<li class="list-inline-item">
-										<a class="text-muted" href="#">Help Center</a>
-									</li>
-									<li class="list-inline-item">
-										<a class="text-muted" href="privacy-policy.html">Privacy</a>
-									</li>
-									<li class="list-inline-item">
-										<a class="text-muted" href="terms-conditions.html">Terms</a>
-									</li>
-								</ul>
+					</main>
+					
+					<footer class="footer">
+						<div class="container-fluid">
+							<div class="row text-muted">
+								<div class="col-6 text-start">
+									<p class="mb-0">
+										&copy; উপকূল দলিল সেবা
+									</p>
+								</div>
+								<div class="col-6 text-end">
+									<ul class="list-inline">
+										<li class="list-inline-item">
+											<a class="text-muted" href="#">Support</a>
+										</li>
+										<li class="list-inline-item">
+											<a class="text-muted" href="#">Help Center</a>
+										</li>
+										<li class="list-inline-item">
+											<a class="text-muted" href="privacy-policy.html">Privacy</a>
+										</li>
+										<li class="list-inline-item">
+											<a class="text-muted" href="terms-conditions.html">Terms</a>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-					</div>
-				</footer>
+					</footer>
+				</div>
 			</div>
-		</div>
-		
-		<script src="js/app.js"></script>
-		
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
-				var gradient = ctx.createLinearGradient(0, 0, 0, 225);
-				gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
-				gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
-				// Line chart
-				new Chart(document.getElementById("chartjs-dashboard-line"), {
-					type: "line",
-					data: {
-						labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-						datasets: [{
-							label: "Sales ($)",
-							fill: true,
-							backgroundColor: gradient,
-							borderColor: window.theme.primary,
-							data: [
-							2115,
-							1562,
-							1584,
-							1892,
-							1587,
-							1923,
-							2566,
-							2448,
-							2805,
-							3438,
-							2917,
-							3327
-							]
-						}]
+			
+			<script src="js/app.js"></script>
+			
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+					var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+					gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+					gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+					// Line chart
+					new Chart(document.getElementById("chartjs-dashboard-line"), {
+						type: "line",
+						data: {
+							labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+							datasets: [{
+								label: "Sales ($)",
+								fill: true,
+								backgroundColor: gradient,
+								borderColor: window.theme.primary,
+								data: [
+								2115,
+								1562,
+								1584,
+								1892,
+								1587,
+								1923,
+								2566,
+								2448,
+								2805,
+								3438,
+								2917,
+								3327
+								]
+							}]
+						},
+						options: {
+							maintainAspectRatio: false,
+							legend: {
+								display: false
+							},
+							tooltips: {
+								intersect: false
+							},
+							hover: {
+								intersect: true
+							},
+							plugins: {
+								filler: {
+									propagate: false
+								}
+							},
+							scales: {
+								xAxes: [{
+									reverse: true,
+									gridLines: {
+										color: "rgba(0,0,0,0.0)"
+									}
+								}],
+								yAxes: [{
+									ticks: {
+										stepSize: 1000
+									},
+									display: true,
+									borderDash: [3, 3],
+									gridLines: {
+										color: "rgba(0,0,0,0.0)"
+									}
+								}]
+							}
+						}
+					});
+				});
+			</script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					// Pie chart
+					new Chart(document.getElementById("chartjs-dashboard-pie"), {
+						type: "pie",
+						data: {
+							labels: ["Chrome", "Firefox", "IE"],
+							datasets: [{
+								data: [4306, 3801, 1689],
+								backgroundColor: [
+								window.theme.primary,
+								window.theme.warning,
+								window.theme.danger
+								],
+								borderWidth: 5
+							}]
+						},
+						options: {
+							responsive: !window.MSInputMethodContext,
+							maintainAspectRatio: false,
+							legend: {
+								display: false
+							},
+							cutoutPercentage: 75
+						}
+					});
+				});
+			</script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					// Bar chart
+					new Chart(document.getElementById("chartjs-dashboard-bar"), {
+						type: "bar",
+						data: {
+							labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+							datasets: [{
+								label: "This year",
+								backgroundColor: window.theme.primary,
+								borderColor: window.theme.primary,
+								hoverBackgroundColor: window.theme.primary,
+								hoverBorderColor: window.theme.primary,
+								data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+								barPercentage: .75,
+								categoryPercentage: .5
+							}]
+						},
+						options: {
+							maintainAspectRatio: false,
+							legend: {
+								display: false
+							},
+							scales: {
+								yAxes: [{
+									gridLines: {
+										display: false
+									},
+									stacked: false,
+									ticks: {
+										stepSize: 20
+									}
+								}],
+								xAxes: [{
+									stacked: false,
+									gridLines: {
+										color: "transparent"
+									}
+								}]
+							}
+						}
+					});
+				});
+			</script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					var markers = [{
+						coords: [31.230391, 121.473701],
+						name: "Shanghai"
 					},
-					options: {
-						maintainAspectRatio: false,
-						legend: {
-							display: false
-						},
-						tooltips: {
-							intersect: false
-						},
-						hover: {
-							intersect: true
-						},
-						plugins: {
-							filler: {
-								propagate: false
+					{
+						coords: [28.704060, 77.102493],
+						name: "Delhi"
+					},
+					{
+						coords: [6.524379, 3.379206],
+						name: "Lagos"
+					},
+					{
+						coords: [35.689487, 139.691711],
+						name: "Tokyo"
+					},
+					{
+						coords: [23.129110, 113.264381],
+						name: "Guangzhou"
+					},
+					{
+						coords: [40.7127837, -74.0059413],
+						name: "New York"
+					},
+					{
+						coords: [34.052235, -118.243683],
+						name: "Los Angeles"
+					},
+					{
+						coords: [41.878113, -87.629799],
+						name: "Chicago"
+					},
+					{
+						coords: [51.507351, -0.127758],
+						name: "London"
+					},
+					{
+						coords: [40.416775, -3.703790],
+						name: "Madrid "
+					}
+					];
+					var map = new jsVectorMap({
+						map: "world",
+						selector: "#world_map",
+						zoomButtons: true,
+						markers: markers,
+						markerStyle: {
+							initial: {
+								r: 9,
+								strokeWidth: 7,
+								stokeOpacity: .4,
+								fill: window.theme.primary
+							},
+							hover: {
+								fill: window.theme.primary,
+								stroke: window.theme.primary
 							}
 						},
-						scales: {
-							xAxes: [{
-								reverse: true,
-								gridLines: {
-									color: "rgba(0,0,0,0.0)"
-								}
-							}],
-							yAxes: [{
-								ticks: {
-									stepSize: 1000
-								},
-								display: true,
-								borderDash: [3, 3],
-								gridLines: {
-									color: "rgba(0,0,0,0.0)"
-								}
-							}]
-						}
-					}
+						zoomOnScroll: false
+					});
+					window.addEventListener("resize", () => {
+						map.updateSize();
+					});
 				});
-			});
-		</script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				// Pie chart
-				new Chart(document.getElementById("chartjs-dashboard-pie"), {
-					type: "pie",
-					data: {
-						labels: ["Chrome", "Firefox", "IE"],
-						datasets: [{
-							data: [4306, 3801, 1689],
-							backgroundColor: [
-							window.theme.primary,
-							window.theme.warning,
-							window.theme.danger
-							],
-							borderWidth: 5
-						}]
-					},
-					options: {
-						responsive: !window.MSInputMethodContext,
-						maintainAspectRatio: false,
-						legend: {
-							display: false
-						},
-						cutoutPercentage: 75
-					}
+			</script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+					var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+					document.getElementById("datetimepicker-dashboard").flatpickr({
+						inline: true,
+						prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+						nextArrow: "<span title=\"Next month\">&raquo;</span>",
+						defaultDate: defaultDate
+					});
 				});
-			});
-		</script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				// Bar chart
-				new Chart(document.getElementById("chartjs-dashboard-bar"), {
-					type: "bar",
-					data: {
-						labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-						datasets: [{
-							label: "This year",
-							backgroundColor: window.theme.primary,
-							borderColor: window.theme.primary,
-							hoverBackgroundColor: window.theme.primary,
-							hoverBorderColor: window.theme.primary,
-							data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
-							barPercentage: .75,
-							categoryPercentage: .5
-						}]
-					},
-					options: {
-						maintainAspectRatio: false,
-						legend: {
-							display: false
-						},
-						scales: {
-							yAxes: [{
-								gridLines: {
-									display: false
-								},
-								stacked: false,
-								ticks: {
-									stepSize: 20
-								}
-							}],
-							xAxes: [{
-								stacked: false,
-								gridLines: {
-									color: "transparent"
-								}
-							}]
-						}
-					}
-				});
-			});
-		</script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				var markers = [{
-					coords: [31.230391, 121.473701],
-					name: "Shanghai"
-				},
-				{
-					coords: [28.704060, 77.102493],
-					name: "Delhi"
-				},
-				{
-					coords: [6.524379, 3.379206],
-					name: "Lagos"
-				},
-				{
-					coords: [35.689487, 139.691711],
-					name: "Tokyo"
-				},
-				{
-					coords: [23.129110, 113.264381],
-					name: "Guangzhou"
-				},
-				{
-					coords: [40.7127837, -74.0059413],
-					name: "New York"
-				},
-				{
-					coords: [34.052235, -118.243683],
-					name: "Los Angeles"
-				},
-				{
-					coords: [41.878113, -87.629799],
-					name: "Chicago"
-				},
-				{
-					coords: [51.507351, -0.127758],
-					name: "London"
-				},
-				{
-					coords: [40.416775, -3.703790],
-					name: "Madrid "
-				}
-				];
-				var map = new jsVectorMap({
-					map: "world",
-					selector: "#world_map",
-					zoomButtons: true,
-					markers: markers,
-					markerStyle: {
-						initial: {
-							r: 9,
-							strokeWidth: 7,
-							stokeOpacity: .4,
-							fill: window.theme.primary
-						},
-						hover: {
-							fill: window.theme.primary,
-							stroke: window.theme.primary
-						}
-					},
-					zoomOnScroll: false
-				});
-				window.addEventListener("resize", () => {
-					map.updateSize();
-				});
-			});
-		</script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
-				var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
-				document.getElementById("datetimepicker-dashboard").flatpickr({
-					inline: true,
-					prevArrow: "<span title=\"Previous month\">&laquo;</span>",
-					nextArrow: "<span title=\"Next month\">&raquo;</span>",
-					defaultDate: defaultDate
-				});
-			});
-		</script>
+			</script>
+			
+		</body>
 		
-	</body>
-	
-</html>
+	</html>			
