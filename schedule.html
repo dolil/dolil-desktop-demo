@@ -67,8 +67,8 @@
 						</li>
 						
 						<li class="sidebar-item">
-							<a class="sidebar-link" href="privacy-policy.html">
-								<i class="align-middle" data-feather="pocket"></i> <span class="align-middle">গোপনীয়তার নীতিমালা</span>
+							<a class="sidebar-link" href="settings.html">
+								<i class="align-middle" data-feather="settings"></i> <span class="align-middle">সেটিংস</span>
 							</a>
 						</li>
 						
@@ -178,7 +178,7 @@
 								<div class="dropdown-menu dropdown-menu-end">
 									<a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="index.html"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
+									<a class="dropdown-item" href="settings.html"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
 									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
 									<div class="dropdown-divider"></div>
@@ -324,18 +324,18 @@
 											<h3 style="margin-bottom: 0px !important">সম্পত্তির তফসিল - ১</h3>
 										</div>
 									</div>				
-									<div class="card-body">
+									<div class="card-body pb-0">
 										
 										<form action="https://dw.dolil.com/dolil/31476/schedule-of-properties" method="post" accept-charset="utf-8" id="schedule-form-31476">
 											<input type="hidden" name="_token" value="gDeZsx225QlxI1mV6HBat2I3WknZhs4NN45Ysot6">							
 											<div class="form-group row mb-0">
-												<div class="col-md-6 mb-4">
+												<div class="col-md-4 mb-4">
 													<div class="input-group">
 														<div class="input-group-prepend">
-															<span class="input-group-text">পৌরসভা/ইউনিয়ন</span>
+															<span class="input-group-text">পৌরসভা/ইউনিয়ন<span class="text-danger">&nbsp;*</span></span>
 														</div>
 														<select name="union" id="union-31476" class="form-control" required="">
-															<option value="">পৌরসভা/ইউনিয়ন নির্বাচন করুন</option>
+															<option value="">নির্বাচন করুন</option>
 															<option>বানারীপাড়া পৌরসভা</option>
 															<option>১নং বিশারকান্দি</option>
 															<option>২নং ইলুহার</option>
@@ -348,13 +348,13 @@
 														</select>
 													</div>
 												</div>
-												<div class="col-md-6 mb-4">
+												<div class="col-md-4 mb-4">
 													<div class="input-group">
 														<div class="input-group-prepend">
-															<span class="input-group-text">মৌজা</span>
+															<span class="input-group-text">মৌজা<span class="text-danger">&nbsp;*</span></span>
 														</div>
 														<select name="mouja" id="mouja-31476" class="form-control mouzas select2bs4 select2-hidden-accessible" onchange="getJLNo('31476')" data-select2-id="mouja-31476" tabindex="-1" aria-hidden="true">
-															<option value="" data-select2-id="2">মৌজা নির্বাচন করুন</option>
+															<option value="" data-select2-id="2">নির্বাচন করুন</option>
 															<option value="বিশারকান্দি" data-jl-no="১">১ - বিশারকান্দি</option>
 															<option value="মরিচবুনিয়া" data-jl-no="২">২ - মরিচবুনিয়া</option>
 															<option value="কলাভিটা" data-jl-no="৩">৩ - কলাভিটা</option>
@@ -438,34 +438,29 @@
 														<input type="hidden" name="jl_no" id="jl_no-31476" class="form-control" value="" placeholder="জে.এল.নং">
 													</div>
 												</div>
-												<div class="col-md-6 mb-4">
+												<div class="col-md-4 mb-4">
 													<div class="input-group">
 														<div class="input-group-prepend">
-															<span class="input-group-text">জমির একক</span>
-														</div>
-														<select name="unit_of_land_id" id="unit_of_land_id" class="form-control" required="">
-															<option value="">নির্বাচন করুন</option>
-															<option value="1" selected="">একর</option>
-															<option value="4">শতাংশ</option>
-															<option value="6">বর্গমিটার</option>
-															<option value="7">অযুতাংশ</option>
-															<option value="8">বর্গফুট</option>
-														</select>
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">ভূমি অফিসের নাম</span>
+															<span class="input-group-text">ভূমি অফিসের নাম<span class="text-danger">&nbsp;*</span></span>
 														</div>
 														<select name="land_office_name" id="land_office_name-31476" class="form-control" required="">
-															<option value="">পৌরসভা/ইউনিয়ন নির্বাচন করুন</option>
+															<option value="">নির্বাচন করুন</option>
 															<option>সহকারী কমিশনার (ভূমি), বানারীপাড়া।</option>
 														</select>
 													</div>
 												</div>
-											</div>
-											<div class="form-group row cs-office mb-0">
+												
+												<div class="col-md-4 mb-4">
+													<div class="input-group">
+														<div class="input-group-prepend">
+															<span class="input-group-text">স্থাপনা আছে কি না?</span>
+														</div>
+														<select name="has_infrastructure" id="has_infrastructure" class="form-control">
+															<option selected="" value="0">না</option>
+															<option value="1">হ্যাঁ</option>
+														</select>
+													</div>
+												</div>
 												<div class="col-md-6 mb-4">
 													<div class="input-group">
 														<div class="input-group-prepend">
@@ -482,37 +477,26 @@
 														</select>
 													</div>
 												</div>
-												<div class="col-md-6 mb-4">
-													<div class="input-group">
-														<div class="input-group-prepend">
-															<span class="input-group-text">স্থাপনা আছে কি না?</span>
-														</div>
-														<select name="has_infrastructure" id="has_infrastructure" class="form-control">
-															<option selected="" value="0">না</option>
-															<option value="1">হ্যাঁ</option>
-														</select>
-													</div>
+												<div class="col-md-2 text-end mb-4">
+													<a href="schedule-view.html" class="btn btn-success" type="button"><i class="fa fa-save"></i>&nbsp;সংরক্ষণ করুন</a>
 												</div>
 											</div>
-											<div class="col-md-12 text-center mb-2">
-												<a href="schedule-view.html" class="btn btn-success" type="button"><i class="fa fa-save"></i>&nbsp;সংরক্ষণ করুন</a>
-											</div>
+											
 										</form>
-																		
+										
 									</div>
 									<!--/.card-body-->
 								</div>
 								<!--/.card-->
 								
+								
 								<div class="card mb-3">
 									<div class="card-header">
 										<h4>খতিয়ান যোগ করুন</h4>
 									</div>
-									<div class="card-body" style="">
+									<div class="card-body pt-0">
 										
-										<!-- khotiyan information -->
-										
-										<div class="form-group row mb-3">
+										<div class="form-group row mb-3 mt-0">
 											<div class="col-12">
 												<div class="form-check form-check-inline">
 													<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -542,7 +526,7 @@
 																<input type="checkbox" aria-label=""><label class="form-check-label" for="inlineCheckbox3" style="margin-left:10px;">ডিপি খতিয়ান</label>
 															</div>
 														</div>
-														<select class="custom-select" id="inputGroupSelect01">
+														<select class="custom-select" id="inputGroupSelect01" disabled>
 															<option selected>Choose...</option>
 															<option value="1">সিএস</option>
 															<option value="2">এসএ</option>
@@ -551,143 +535,161 @@
 														</select>
 													</div>
 												</div>
+												
+												
+												<div class="form-check form-check-inline">
+													<div class="input-group">
+														<div class="input-group-prepend">
+															<span class="input-group-text">জমির একক নির্বাচন করুন<span class="text-danger">&nbsp;*</span></span>
+														</div>
+														<select name="unit_of_land_id" id="unit_of_land_id" class="custom-select" required="">
+															<option value="">Choose..</option>
+															<option value="1" >একর</option>
+															<option value="4">শতাংশ</option>
+															<option value="7">অযুতাংশ</option>
+														</select>
+													</div>
+												</div>
+												
 											</div>
 										</div>
 										
+										<!-- khotiyan information -->
+										<table class="table table-responsive table-bordered table-striped table-khatian">
+											<thead>
+												<tr>
+													<th rowspan="2" scope="col">#</th>
+													<th colspan="5" scope="col" class="text-center">খতিয়ান নং</th>
+													<th colspan="4" scope="col" class="text-center">দাগ নং</th>
+													
+													<th rowspan="2" scope="col">শ্রেণি</th>
+													<th rowspan="2" scope="col">বর্তমান শ্রেণি <input type="checkbox" name="" id="dp_survey_class_check"></th>
+													<th rowspan="2" scope="col">দাগে খতিয়ানের জমি</th>
+													<th rowspan="2" scope="col">হস্তান্তরিত জমি</th>
+													<th rowspan="2" scope="col">Action</th>
+												</tr>
+												<tr>
+													<th scope="col">সিএস</th>
+													<th scope="col">এসএ</th>
+													<th scope="col">আরএস</th>
+													<th scope="col">বিএস</th>
+													<th scope="col">নামজারি</th>
+													
+													<th scope="col">সিএস</th>
+													<th scope="col">এসএ</th>
+													<th scope="col">আরএস</th>
+													<th scope="col">বিএস</th>
+													
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row">১</th>
+													
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													
+													<td>
+														<select name="dp_ledger_class" id="dp_survey_class" class="form-control">
+															<option value="">Choose..</option>
+															<option value="ধানি">ধানি</option>
+															<option value="বাড়ি">বাড়ি</option>
+															<option value="বন">বন</option>
+															<option value="জঙ্গল">জঙ্গল</option>
+															<option value="টিলা">টিলা</option>
+															<option value="পুকুর">পুকুর</option>
+															<option value="বিল">বিল</option>
+															<option value="মাটিয়াল">মাটিয়াল</option>
+															<option value="নাল">নাল</option>
+															
+														</select>
+													</td>
+													<td>
+														<select name="dp_ledger_class" id="dp_survey_class" class="form-control" disabled>
+															<option value="">Choose..</option>
+															<option value="ধানি">ধানি</option>
+															<option value="বাড়ি">বাড়ি</option>
+															<option value="বন">বন</option>
+															<option value="জঙ্গল">জঙ্গল</option>
+															<option value="টিলা">টিলা</option>
+															<option value="পুকুর">পুকুর</option>
+															<option value="বিল">বিল</option>
+															<option value="মাটিয়াল">মাটিয়াল</option>
+															<option value="নাল">নাল</option>
+															
+														</select>
+													</td>
+													<td><input type="number" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="number" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td class="btn-group-max">
+														<div class="btn-group d-flex">
+															<a class="btn btn-sm btn-success text-white" href="#"><i class="fa fa-plus text-white"></i></a>
+															<a class="btn btn-sm btn-primary text-white" href="#"><i class="fa fa-copy text-white"></i></a>
+															<a class="btn btn-sm btn-danger text-white"><span class="d-block"><i class="fa fa-minus text-white"></i></span></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">২</th>
+													
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+												</tr>
+												<tr>
+													<th scope="row">৩</th>
+													
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+													<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+												</tr>
+											</tbody>
+										</table>
 										
-										<div class="form-group row mb-1">
-											
-											<div class="col-6 col-md-1 mb-4">
-												<label for="incoming_spot-1">সিএস</label>
-												<input type="text" name="incoming_spots[1]" id="incoming_spot-1"   class="form-control" placeholder="খতিয়ান নং">
-												<div class="form-check form-check-inline">
-													<input class="form-check-input same-as-prev" data-ledger_no="545" type="checkbox" id="same-as-1" value="option1">
-													<label class="form-check-label" for="same-as-1"><small>SAP</small></label>
-												</div>
+										
+										<div class="form-group row">
+											<div class="col-md-12 mb-4  mt-3">
+												<h5>প্রযোজ্য ক্ষেত্রে তফসিলে উল্লিখিত সম্পত্তি সম্পর্কে কোন অতিরিক্ত মন্তব্য থাকলে এখানে লিখুনঃ</h5>
+												<textarea name="first_textbox" class="form-control" id="first_textbox" cols="30" rows="3"></textarea>
+												
 											</div>
-											<div class="col-6 col-md-1 mb-4">
-												<label for="incoming_spot-1">এসএ</label>
-												<input type="text" name="incoming_spots[1]" id="incoming_spot-1"   class="form-control" placeholder="খতিয়ান নং">
-												<div class="form-check form-check-inline">
-													<input class="form-check-input same-as-prev" data-ledger_no="545" type="checkbox" id="same-as-1" value="option1">
-													<label class="form-check-label" for="same-as-1"><small>SAP</small></label>
-												</div>
-											</div>
-											<div class="col-6 col-md-1 mb-4">
-												<label for="incoming_spot-1">আরএস</label>
-												<input type="text" name="incoming_spots[1]" id="incoming_spot-1"   class="form-control" placeholder="খতিয়ান নং">
-												<div class="form-check form-check-inline">
-													<input class="form-check-input same-as-prev" data-ledger_no="545" type="checkbox" id="same-as-1" value="option1">
-													<label class="form-check-label" for="same-as-1"><small>SAP</small></label>
-												</div>
-											</div>
-											<div class="col-6 col-md-1 mb-4">
-												<label for="incoming_spot-1">বিএস</label>
-												<input type="text" name="incoming_spots[1]" id="incoming_spot-1"   class="form-control" placeholder="খতিয়ান নং">
-												<div class="form-check form-check-inline">
-													<input class="form-check-input same-as-prev" data-ledger_no="545" type="checkbox" id="same-as-1" value="option1">
-													<label class="form-check-label" for="same-as-1"><small>SAP</small></label>
-												</div>
-											</div>
-											<div class="col-6 col-md-1 mb-4">
-												<label for="incoming_spot-1">নামজারি</label>
-												<input type="text" name="incoming_spots[1]" id="incoming_spot-1"   class="form-control" placeholder="খতিয়ান নং">
-												<div class="form-check form-check-inline">
-													<input class="form-check-input same-as-prev" data-ledger_no="545" type="checkbox" id="same-as-1" value="option1">
-													<label class="form-check-label" for="same-as-1"><small>SAP</small></label>
-												</div>
-											</div>
-											
-											<div class="col-6 col-md-1 mb-4">
-												<label for="incoming_spot-1">সিএস দাগ</label>
-												<input type="text" name="incoming_spots[1]" id="incoming_spot-1"   class="form-control" placeholder="দাগ নং">
-												<div class="form-check form-check-inline">
-													<input class="form-check-input same-as-prev" data-ledger_no="545" type="checkbox" id="same-as-1" value="option1">
-													<label class="form-check-label" for="same-as-1"><small>SAP</small></label>
-												</div>
-											</div>
-											<div class="col-6 col-md-1 mb-4">
-												<label for="spot_no">এসএ দাগ<span class="text-danger">&nbsp;*</span></label>
-												<input type="text" name="spot_no" id="spot_no"   class="form-control" placeholder="দাগ নং" required="">
-												<div class="form-check form-check-inline">
-													<input class="form-check-input same-as-prev" data-ledger_no="545" type="checkbox" id="same-as-1" value="option1">
-													<label class="form-check-label" for="same-as-1"><small>SAP</small></label>
-												</div>
-											</div>
-											<div class="col-6 col-md-1 mb-4">
-												<label for="spot_no">আরএস<span class="text-danger">&nbsp;*</span></label>
-												<input type="text" name="spot_no" id="spot_no"   class="form-control" placeholder="দাগ নং" required="">
-												<div class="form-check form-check-inline">
-													<input class="form-check-input same-as-prev" data-ledger_no="545" type="checkbox" id="same-as-1" value="option1">
-													<label class="form-check-label" for="same-as-1"><small>SAP</small></label>
-												</div>
-											</div>
-											<div class="col-6 col-md-1 mb-4">
-												<label for="spot_no">বিএস দাগ<span class="text-danger">&nbsp;*</span></label>
-												<input type="text" name="spot_no" id="spot_no"   class="form-control" placeholder="দাগ নং" required="">
-												<div class="form-check form-check-inline">
-													<input class="form-check-input same-as-prev" data-ledger_no="545" type="checkbox" id="same-as-1" value="option1">
-													<label class="form-check-label" for="same-as-1"><small>SAP</small></label>
-												</div>
-											</div>
-											
-											
-											
-											<!-- start land class -->
-											
-											<!-- end land class -->
-											
-											<div class="col-lg-2 col-md-4 mb-4">
-												<label for="class">শ্রেণি<span class="text-danger">&nbsp;*</span></label>
-												<select name="class" id="class" class="form-control" data-select2-id="class" tabindex="-1" aria-hidden="true">
-													<option value="" disabled="" selected="" data-select2-id="529">শ্রেণি নির্বাচন করুন</option>
-													<option>ধানি</option>
-													<option>বাড়ি</option>
-													<option>বন</option>
-													<option>জঙ্গল</option>
-													<option>টিলা</option>
-													<option>পুকুর</option>
-													
-												</select>
-											</div>
-											
-											<div class="col-lg-2 col-md-4 mb-4">
-												<label class="form-check-label pt-1" for="is_organization_" style="cursor: pointer;">
-													বর্তমান শ্রেণি<span class="text-danger">&nbsp;*</span>&nbsp;&nbsp;
-													<input type="checkbox" name="" id="dp_survey_class_check">
-												</label>
-												<select name="dp_ledger_class" id="dp_survey_class" class="form-control" disabled="" readonly="" data-select2-id="dp_survey_class" tabindex="-1" aria-hidden="true">
-													<option value="" data-select2-id="890">শ্রেণি নির্বাচন করুন</option>
-													<option value="ধানি">ধানি</option>
-													<option value="বাড়ি">বাড়ি</option>
-													<option value="বন">বন</option>
-													<option value="জঙ্গল">জঙ্গল</option>
-													<option value="টিলা">টিলা</option>
-													<option value="পুকুর">পুকুর</option>
-													<option value="বিল">বিল</option>
-													<option value="মাটিয়াল">মাটিয়াল</option>
-													<option value="নাল">নাল</option>
-													
-												</select>
-											</div>
-											
-											<!--
-												<div class="col-md-2 mb-4">
-												<label for="total_land">দাগে মোট জমি <span class="text-danger">&nbsp;*</span></label>
-												<input type="text" name="total_land" id="total_land" onchange="verifyMePlease($(this))" onkeyup="verifyMePlease($(this))" class="form-control input-field-1" data-input-field="1">
-												</div>
-											-->
-											<div class="col-6 col-md-2 mb-4">
-												<label for="ledger_land">দাগে খতিয়ানের জমি<span class="text-danger">&nbsp;*</span></label>
-												<input type="text" name="ledger_land" id="ledger_land" onchange="verifyMePlease($(this))" onkeyup="verifyMePlease($(this))" class="form-control input-field-2" placeholder="শতাংশ" data-input-field="2" required="">
-											</div>
-											<div class="col-6 col-md-2 mb-4">
-												<label for="deserved_land">দাগে প্রাপ্য জমি<span class="text-danger">&nbsp;*</span></label>
-												<input type="text" name="deserved_land" id="deserved_land" onchange="verifyMePlease($(this))" onkeyup="verifyMePlease($(this))" class="form-control input-field-3" placeholder="শতাংশ" data-input-field="3" required="">
-											</div>
-											<div class="col-6 col-md-2 mb-4">
-												<label for="transferred_land">হস্তান্তরিত জমি<span class="text-danger">&nbsp;*</span></label>
-												<input type="text" name="transferred_land" id="transferred_land" onchange="verifyMePlease($(this))" onkeyup="verifyMePlease($(this))" class="form-control input-field-4" placeholder="শতাংশ" data-input-field="4" required="">
+										</div>
+										
+										<div class="form-group row">
+											<div class="col-md-12 mb-4">
+												<label>সাধারণ মন্তব্য সকল দলিলের জন্য প্রযোজ্য এখানে থাকবে যেটা ডাটাবাযে সেভ হবে...............</label>
 											</div>
 										</div>
 										
@@ -707,9 +709,12 @@
 											</div>
 										</div>
 										<!--/.row-->
+										
 									</div>
+									<!--/.card-body-->
 								</div>
 								<!--/.card-->
+								
 								
 							</div>
 							<!--/.col-12-->
