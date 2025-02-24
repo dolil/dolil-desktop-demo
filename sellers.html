@@ -354,8 +354,24 @@
 															<tr class="striped">
 																<th colspan="2" scope="col">ধর্ম<span class="text-danger">&nbsp;*</span></th>
 																<th colspan="2" scope="col">পেশা<span class="text-danger">&nbsp;*</span></th>
-																<th colspan="3" scope="col">সনাক্তকরণ ডকুমেন্ট<span class="text-danger">&nbsp;*</span></th>
-																<th colspan="" scope="col">টি.আই.এন</th>
+																<th colspan="3" scope="col" class="">
+																	
+																	<div class="input-group">
+																		<div class="input-group-text">
+																			<input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+																			<label class="form-check-label" for="inlineCheckbox1" style="margin-left:5px;">NID</label>
+																		</div>
+																		<div class="input-group-text">
+																			<input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+																			<label class="form-check-label" for="inlineCheckbox2" style="margin-left:5px;">PASSPORT</label>
+																		</div>
+																		<div class="input-group-text">
+																			<input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+																			<label class="form-check-label" for="inlineCheckbox3" style="margin-left:5px;">BRC</label>
+																		</div>																		
+																	</div>
+																</th>
+																<th colspan="2" scope="col">টি.আই.এন</th>
 															</tr>
 															<tr>
 																<td colspan="2">
@@ -390,24 +406,25 @@
 																</td>
 																<td colspan="3">
 																	<div class="input-group">
-																		<select name="identity" id="identity" class="form-select" required="" onchange="checkIdentity($(this))"style="max-width:125px;">
-																			<option value="">নির্বাচন করুন</option>
-																			<option value="0">জাতীয় পরিচয়পত্র</option>
-																			<option value="1">জন্ম নিবন্ধন সনদ</option>
-																			<option value="2">পাসপোর্ট নম্বর</option>
-																		</select>
+																		
 																		<input type="text" name="nid_no" id="nid_no" class="form-control" onchange="filterMe($(this))" onkeyup="filterMe($(this))" value="" required="">
 																	</div>
 																</td>
-																<td colspan=""><input type="text" id="othernames" name="othernames" style="width: 100%;" placeholder="(প্রযোজ্য ক্ষেত্রে)"></td>
+																<td colspan="2"><input type="text" id="othernames" name="othernames" style="width: 100%;" placeholder="(প্রযোজ্য ক্ষেত্রে)"></td>
 																
 																
 															</tr>
 															
 															<tr class="striped">
 																<th colspan="4" scope="col">স্থায়ী ঠিকানা<span class="text-danger">&nbsp;*</span></th>
-																<th colspan="4" scope="col">বর্তমান ঠিকানা<span class="text-danger">&nbsp;*</span></th>
-																
+																<th colspan="4" scope="col" class="">বর্তমান ঠিকানা<span class="text-danger">&nbsp;*</span>
+																	<div class="form-check float-end">
+																		<label class="form-check-label pt-1" for="same_as_permanent" style="cursor: pointer;">
+																			<input class="form-check-input" type="checkbox" id="same_as_permanent" name="same_as_permanent" onclick="hideShow()" value="1" style="cursor: pointer;transform: scale(1.25, 1.25);margin-top: 2px">
+																			স্থায়ী ঠিকানার অনুরুপ
+																		</label>
+																	</div>
+																</th>																
 															</tr>
 															
 															<tr class="striped">

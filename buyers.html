@@ -407,7 +407,14 @@
 															
 															<tr class="striped">
 																<th colspan="4" scope="col">স্থায়ী ঠিকানা<span class="text-danger">&nbsp;*</span></th>
-																<th colspan="4" scope="col">বর্তমান ঠিকানা<span class="text-danger">&nbsp;*</span></th>
+																<th colspan="4" scope="col" class="">বর্তমান ঠিকানা<span class="text-danger">&nbsp;*</span>
+																	<div class="form-check float-end">
+																		<label class="form-check-label pt-1" for="same_as_permanent" style="cursor: pointer;">
+																			<input class="form-check-input" type="checkbox" id="same_as_permanent" name="same_as_permanent" onclick="hideShow()" value="1" style="cursor: pointer;transform: scale(1.25, 1.25);margin-top: 2px">
+																			স্থায়ী ঠিকানার অনুরুপ
+																		</label>
+																	</div>
+																</th>
 																
 															</tr>
 															
