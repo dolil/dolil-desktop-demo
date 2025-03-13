@@ -484,3 +484,7 @@
 ol {
 	list-style-type: bengali;
 }
+
+.info-ftr-icon > img {
+    max-width: 100%;
+}
