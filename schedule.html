@@ -331,7 +331,7 @@
 																<th style="min-width:140px;">পৌরসভা/ইউনিয়ন<span class="text-danger">&nbsp;*</span></th>
 																<th style="min-width:100px;width:220px;">ভূমি অফিসের নাম<span class="text-danger">&nbsp;*</span></th>
 																<th style="min-width:100px;">স্থাপনা আছে কি না?</th>
-																<th style="width:220px;">উন্নয়ন কর্তৃপক্ষের নাম (প্রযোজ্য ক্ষেত্রে)</th>
+																<th style="width:220px;">উন্নয়ন কর্তৃপক্ষ (প্রযোজ্য ক্ষেত্রে)</th>
 																<th>জমির একক<span class="text-danger">&nbsp;*</span></th>									
 															</tr>
 														</thead>
@@ -443,6 +443,18 @@
 												</div>
 												
 												
+												<!-- Previous khotiyan information -->												
+												<div class="mb-3 text-end">													
+													<button class="btn btn-sm btn-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+														<i class="fa fa-plus text-white"></i>&nbsp;সাবেক খতিয়ান ও দাগসমহূ পৃথকভাবে যুক্ত করুন
+													</button>
+													
+													<div class="collapse mt-2" id="collapseExample">
+														<textarea name="first_textbox" class="form-control" id="first_textbox" cols="30" rows="2"></textarea>
+													</div>
+												</div>
+												<!--/ Previous khotiyan information -->
+												
 												<!-- khotiyan information -->
 												<table class="table table-responsive table-bordered table-striped table-khatian">
 													<thead>
@@ -456,10 +468,7 @@
 															<th rowspan="2" scope="col">দাগে খতিয়ানের জমি</th>
 															<th rowspan="2" scope="col">
 																হস্তান্তরিত জমি
-																<input type="number" id="othernames" name="othernames" style="width: 100%;">
-																<small id="name" class="form-text text-muted">
-																	হিস্যাংশ&nbsp;<i class="fas fa-info-circle"></i>
-																</small>
+																<input type="number" id="othernames" name="othernames" style="width: 100%;" placeholder="হিস্যাংশ লিখুন">
 															</th>
 															<th rowspan="2" scope="col">Action</th>
 														</tr>
@@ -576,17 +585,8 @@
 												</table>
 												
 												<div class="form-group row">
-													<div class="col-md-12 mb-3  mt-4">
-														<h5>সাবেক খতিয়ান ও দাগসমহূ পৃথকভাবে লিখতে হলে এই ফিল্ড ব্যবহার করুনঃ</h5>
-														<textarea name="first_textbox" class="form-control" id="first_textbox" cols="30" rows="2"></textarea>
-														
-													</div>
-												</div>
-												
-												
-												<div class="form-group row">
 													<div class="col-md-12 mb-3 mt-3">
-														<h5>প্রযোজ্য ক্ষেত্রে তফসিলে উল্লিখিত সম্পত্তি সম্পর্কে কোন অতিরিক্ত মন্তব্য থাকলে এখানে লিখুনঃ</h5>
+														<h5>প্রযোজ্য ক্ষেত্রে অতিরিক্ত মন্তব্য যেমন প্লট এর বিবরণ, জমি/প্লটের স্থানীয় মাপ, ফ্ল্যাট/স্পেসের ক্ষেত্রে জমি অচিহ্নিত অবিভিক্ত কি না ইত্যাদিঃ</h5>
 														<textarea name="first_textbox" class="form-control" id="first_textbox" cols="30" rows="2"></textarea>
 														
 													</div>
@@ -876,4 +876,4 @@
 				
 			</body>
 			
-		</html>									
+		</html>															
