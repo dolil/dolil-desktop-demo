@@ -325,28 +325,28 @@
 												<div class="form-group row mb-0">
 													
 													<table class="table table-bordered table-striped">
-														<thead>
-															<tr>
-																<th style="min-width:100px;">মৌজা<span class="text-danger">&nbsp;*</span></th>
-																<th style="min-width:140px;">পৌরসভা/ইউনিয়ন<span class="text-danger">&nbsp;*</span></th>
-																<th style="min-width:100px;width:220px;">ভূমি অফিসের নাম<span class="text-danger">&nbsp;*</span></th>
-																<th style="min-width:100px;">স্থাপনা আছে কি না?</th>
-																<th style="width:220px;">উন্নয়ন কর্তৃপক্ষ (প্রযোজ্য ক্ষেত্রে)</th>
-																<th>জমির একক<span class="text-danger">&nbsp;*</span></th>									
-															</tr>
-														</thead>
 														<tbody>
 															<tr>
+																<th style="min-width:100px;width:220px;">ভূমি অফিসের নাম<span class="text-danger">&nbsp;*</span></th>
+																<th style="min-width:100px;">জেলা<span class="text-danger">&nbsp;*</span></th>
+																<th style="min-width:100px;">থানা/উপজেলা<span class="text-danger">&nbsp;*</span></th>
+																<th style="min-width:140px;">পৌরসভা/ইউনিয়ন<span class="text-danger">&nbsp;*</span></th>
+																<th style="min-width:100px;">সর্বশেষ জরিপ<span class="text-danger">&nbsp;*</span></th>
+																<th style="min-width:100px;">মৌজা<span class="text-danger">&nbsp;*</span></th>
+																<th style="min-width:100px;">সাবেক জে.এল নং<span class="text-danger">&nbsp;*</span></th>
+																
+															</tr>
+															<tr>																
 																<td>
-																	<select name="mouja" id="mouja-31476" class="form-select mouzas select2bs4 select2-hidden-accessible" onchange="getJLNo('31476')" data-select2-id="mouja-31476" tabindex="-1" aria-hidden="true">
-																		<option value="" data-select2-id="2">নির্বাচন করুন</option>
-																		<option value="বিশারকান্দি" data-jl-no="১">১ - বিশারকান্দি</option>
-																		<option value="মরিচবুনিয়া" data-jl-no="২">২ - মরিচবুনিয়া</option>
-																		<option value="কলাভিটা" data-jl-no="৩">৩ - কলাভিটা</option>
+																	<select name="land_office_name" id="land_office_name-31476" class="form-select" required="">
+																		<option value="">নির্বাচন করুন</option>
+																		<option>সহকারী কমিশনার (ভূমি), বানারীপাড়া।</option>
 																	</select>
 																</td>
+																<td><input type="text" id="othernames" name="othernames" style="width: 100%;" disabled></td>
+																<td><input type="text" id="othernames" name="othernames" style="width: 100%;" disabled></td>
 																<td>
-																	<select name="union" id="union-31476" class="form-select" required="" disabled>
+																	<select name="union" id="union-31476" class="form-select" required="">
 																		<option value="">নির্বাচন করুন</option>
 																		<option>বানারীপাড়া পৌরসভা</option>
 																		<option>১নং বিশারকান্দি</option>
@@ -355,9 +355,36 @@
 																	</select>
 																</td>
 																<td>
-																	<select name="land_office_name" id="land_office_name-31476" class="form-select" required="" disabled>
+																	<select name="union" id="union-31476" class="form-select" required="">
 																		<option value="">নির্বাচন করুন</option>
-																		<option>সহকারী কমিশনার (ভূমি), বানারীপাড়া।</option>
+																		<option>সিএস</option>
+																		<option>এসএ</option>
+																		<option>আএস</option>
+																		<option>বিআরএস</option>
+																	</select>
+																</td>
+																<td>
+																	<select name="mouja" id="mouja-31476" class="form-select mouzas select2bs4 select2-hidden-accessible" onchange="getJLNo('31476')" data-select2-id="mouja-31476" tabindex="-1" aria-hidden="true">
+																		<option value="" data-select2-id="2">নির্বাচন করুন</option>
+																		<option value="বিশারকান্দি" data-jl-no="১">১ - বিশারকান্দি</option>
+																		<option value="মরিচবুনিয়া" data-jl-no="২">২ - মরিচবুনিয়া</option>
+																		<option value="কলাভিটা" data-jl-no="৩">৩ - কলাভিটা</option>
+																	</select>
+																</td>
+																<td><input type="text" id="othernames" name="othernames" style="width: 100%;"></td>
+															</tr>
+															<tr>
+																<th>জমির একক<span class="text-danger">&nbsp;*</span></th>
+																<th style="min-width:100px;">স্থাপনা আছে কি না?</th>
+																<th colspan="2" style="width:220px;">উন্নয়ন কর্তৃপক্ষ (প্রযোজ্য ক্ষেত্রে)</th>									
+															</tr>
+															<tr>
+																<td>
+																	<select name="unit_of_land_id" id="unit_of_land_id" class="form-select" required="">
+																		<option value="">Choose..</option>
+																		<option value="1" >একর</option>
+																		<option value="4">শতাংশ</option>
+																		<option value="7">অযুতাংশ</option>
 																	</select>
 																</td>
 																<td>
@@ -366,7 +393,7 @@
 																		<option value="1">হ্যাঁ</option>
 																	</select>
 																</td>
-																<td>
+																<td colspan="2">
 																	<select name="development_authority_id" id="development_authority_id" class="form-select">
 																		<option value="">সিলেক্ট করুন</option>
 																		<option value="1">জাতীয় গৃহায়ন কর্তৃপক্ষ (NHA)</option>
@@ -375,14 +402,6 @@
 																		<option value="4">খুলনা উন্নয়ন কর্তৃপক্ষ (KDA)</option>
 																		<option value="5">রাজশাহী উন্নয়ন কর্তৃপক্ষ (RDA)</option>
 																		<option value="6">কক্সবাজার উন্নয়ন কর্তৃপক্ষ (COXDA)</option>
-																	</select>
-																</td>
-																<td>
-																	<select name="unit_of_land_id" id="unit_of_land_id" class="form-select" required="">
-																		<option value="">Choose..</option>
-																		<option value="1" >একর</option>
-																		<option value="4">শতাংশ</option>
-																		<option value="7">অযুতাংশ</option>
 																	</select>
 																</td>
 															</tr>
@@ -433,7 +452,7 @@
 															<input type="checkbox" aria-label=""><label class="form-check-label" for="inlineCheckbox3" style="margin-left:10px;">ডিপি খতিয়ান</label>
 														</div>
 													</div>
-													<select class="form-control" id="inputGroupSelect01" disabled>
+													<select class="form-control" id="inputGroupSelect01">
 														<option selected>Choose...</option>
 														<option value="1">সিএস</option>
 														<option value="2">এসএ</option>
@@ -876,4 +895,4 @@
 				
 			</body>
 			
-		</html>															
+		</html>																	
